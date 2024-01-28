@@ -1,4 +1,5 @@
-﻿using RD.Framework.API.FileManager;
+﻿using RD.Framework.API.config;
+using RD.Framework.API.FileManager;
 using System;
 using System.IO;
 using System.Reflection;
@@ -69,15 +70,15 @@ namespace RD.Framework.main
             return Path.Combine(SaveLocation, FileName);
         }
 
-        public static BaseConfig Config
+        public static ConfigRDF Config
         {
             get
             {
-                return FileManager<BaseConfig>.ReadFromFile(SaveLocation,"RD.Base");
+                return FileManager<ConfigRDF>.ReadFromFile(SaveLocation,"RD.Base");
             }
             set
             {
-                FileManager<BaseConfig>.WriteToFile(value, SaveLocation, "RD.Base");
+                FileManager<ConfigRDF>.WriteToFile(value, SaveLocation, "RD.Base");
             }
         }
 

@@ -2,12 +2,14 @@
 using Eco.Gameplay.Systems.Chat;
 using Eco.Gameplay.Systems.Messaging.Chat.Commands;
 using Eco.ModKit;
+using System.Reflection;
 
 namespace RD.Framework.API.commands
 {
+    [ChatCommandHandler]
     public class Commands
     {
-        private static string RDVersion = "0.0.1";
+        private static string RDVersion = Assembly.GetExecutingAssembly().GetName().Version.ToString();
 
         [ChatCommand("Checks Verion of RD Framework", "rd-ver", ChatAuthorizationLevel.Admin)]
         public static void CheckModVersion(IChatClient chatClient)

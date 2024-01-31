@@ -17,7 +17,7 @@ using Eco.Shared.Localization;
 using Eco.Shared.Math;
 using Eco.Shared.Serialization;
 
-namespace RD.Framework.main.RDFood.Items.Objects
+namespace RD.Framework.main.RDFood.RDRanching.Objects
 {
     [Serialized]
     [RequireComponent(typeof(OnOffComponent))]
@@ -39,10 +39,10 @@ namespace RD.Framework.main.RDFood.Items.Objects
 
         protected override void Initialize()
         {
-            this.ModsPreInitialize();
-            this.GetComponent<MinimapComponent>().SetCategory(Localizer.DoStr("Crafting"));
-            this.GetComponent<HousingComponent>().HomeValue = ButterChurnItem.homeValue;
-            this.ModsPostInitialize();
+            ModsPreInitialize();
+            GetComponent<MinimapComponent>().SetCategory(Localizer.DoStr("Crafting"));
+            GetComponent<HousingComponent>().HomeValue = ButterChurnItem.homeValue;
+            ModsPostInitialize();
         }
 
         partial void ModsPreInitialize();
@@ -54,11 +54,11 @@ namespace RD.Framework.main.RDFood.Items.Objects
     [LocDescription("Churns Milk into butter.")]
     [IconGroup("World Object Minimap")]
     [Ecopedia("Work Stations", "Craft Tables", createAsSubPage: true)]
-    [Weight(5000)] 
-    [AllowPluginModules(Tags = new[] { "BasicUpgrade" }, ItemTypes = new[] { typeof(CookingUpgradeItem) })] 
+    [Weight(5000)]
+    [AllowPluginModules(Tags = new[] { "BasicUpgrade" }, ItemTypes = new[] { typeof(CookingUpgradeItem) })]
     public partial class ButterChurnItem : WorldObjectItem<ButterChurnObject>, IPersistentData
     {
-        protected override OccupancyContext GetOccupancyContext => new SideAttachedContext(0 | DirectionAxisFlags.Down, WorldObject.GetOccupancyInfo(this.WorldObjectType));
+        protected override OccupancyContext GetOccupancyContext => new SideAttachedContext(0 | DirectionAxisFlags.Down, WorldObject.GetOccupancyInfo(WorldObjectType));
         public override HomeFurnishingValue HomeValue => homeValue;
         public static readonly HomeFurnishingValue homeValue = new HomeFurnishingValue()
         {

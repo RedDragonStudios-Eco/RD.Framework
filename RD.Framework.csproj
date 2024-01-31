@@ -58,8 +58,10 @@
   <ItemGroup>
     <Folder Include="AutoGen\" />
     <Folder Include="main\RDFood\Assets\" />
-    <Folder Include="main\RDFood\Items\Foods\Meals\Cooking\" />
-    <Folder Include="main\RDFood\Items\Foods\Meals\Baking\" />
+    <Folder Include="main\RDFood\RDCooking\Items\Ingredients\" />
+    <Folder Include="main\RDFood\RDCooking\Items\Meals\" />
+    <Folder Include="main\RDFood\RDCooking\Recipies\Ingredients\" />
+    <Folder Include="main\RDFood\RDCooking\Recipies\Meals\" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

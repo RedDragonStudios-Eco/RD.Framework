@@ -3,7 +3,7 @@ using Eco.Gameplay.Items;
 using Eco.Shared.Localization;
 using Eco.Shared.Serialization;
 
-namespace RD.Framework.main.RDFood.Items.Foods.Ingredients
+namespace RD.Framework.main.RDFood.RDRanching.Ingredients
 {
     [Serialized]
     [LocDisplayName("Bucket of Milk")]

@@ -7,7 +7,7 @@ namespace RD.Framework.main.RDRanching.Items.Animals.AdultAnimals
 {
     [Serialized] 
     [LocDisplayName("Pig")] 
-    [Weight(2000)] 
+    [Weight(4000)] 
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
     [Tag("Pig")]
     [Tag("Pig")]

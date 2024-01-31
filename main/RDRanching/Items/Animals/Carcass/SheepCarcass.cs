@@ -11,7 +11,7 @@ namespace RD.Framework.main.RDRanching.Items.Animals.Carcass
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
     [Tag("Slaughter Sheep")]
     [Tag("Sheep Carcass")]
-    [LocDescription("A Cow you can bread purley for meat production")] 
+    [LocDescription("A Dead Sheep Body")] 
     public partial class SheepCarcassItem : Item
     {
     }

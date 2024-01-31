@@ -5,13 +5,13 @@ using Eco.Shared.Serialization;
 
 namespace RD.Framework.main.RDRanching.Items.Animals.Carcass
 {
-    [Serialized] // Tells the save/load system this object needs to be serialized. 
-    [LocDisplayName("Goat Carcass")] // Defines the localized name of the item.
-    [Weight(250)] // Defines how heavy Board is.
+    [Serialized] 
+    [LocDisplayName("Goat Carcass")] 
+    [Weight(250)] 
     [Ecopedia("Items", "Food", createAsSubPage: true)]
     [Tag("Carcass")]
     [Tag("Goat Carcass")]
-    [LocDescription("A Cow you can bread purley for meat production")] //The tooltip description for the item.
+    [LocDescription("A Dead Goat")] 
     public partial class GoatCarcassItem : Item
     {
 

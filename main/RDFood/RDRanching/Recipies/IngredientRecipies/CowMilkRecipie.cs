@@ -7,12 +7,12 @@ using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
 using RD.Framework.main.RDRanching.Items.obj;
 using RD.Framework.main.RDRanching.Items;
 using RD.Framework.main.RDSkills.Ranching;
-using RD.Framework.main.RDFood.Items.Foods.Ingredients;
+using RD.Framework.main.RDFood.RDRanching.Ingredients;
 
-namespace RD.Framework.main.RDFood.Recipies.IngredientRecipies
+namespace RD.Framework.main.RDFood.RDRanching.Recipies.IngredientRecipies
 {
     [RequiresSkill(typeof(RancherSkill), 2)]
-    [Ecopedia("Items", "Products", createAsSubPage: true)]
+    [Ecopedia("Food", "Ingredients", createAsSubPage: true)]
     public partial class MilkTheCowRecipe : RecipeFamily
     {
         public MilkTheCowRecipe()
@@ -24,20 +24,22 @@ namespace RD.Framework.main.RDFood.Recipies.IngredientRecipies
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(DairyCowItem), 1, true),
-                    new IngredientElement(typeof(BucketItem), 5, true),
+                    new IngredientElement(typeof(BucketItem), 1, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 5, true)
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<CowMilkItem>(5)
+                    new CraftingElement<CowMilkItem>(1),
+                    new CraftingElement<CowItem>(1)
                 });
 
-            this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 5;
-            this.LaborInCalories = CreateLaborInCaloriesValue(70, typeof(RancherSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(MilkTheCowRecipe), start: 5, skillType: typeof(RancherSkill));
-            this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Milking A Cow"), recipeType: typeof(MilkTheCowRecipe));
-            this.ModsPostInitialize();
+            Recipes = new List<Recipe> { recipe };
+            ExperienceOnCraft = 5;
+            LaborInCalories = CreateLaborInCaloriesValue(70, typeof(RancherSkill));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(MilkTheCowRecipe), start: 5.0f, skillType: typeof(RancherSkill));
+            ModsPreInitialize();
+            Initialize(displayText: Localizer.DoStr("Milking A Cow"), recipeType: typeof(MilkTheCowRecipe));
+            ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(BarnObject), recipe: this);
         }
         partial void ModsPreInitialize();

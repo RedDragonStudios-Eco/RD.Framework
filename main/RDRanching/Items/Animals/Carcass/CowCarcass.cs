@@ -7,7 +7,7 @@ namespace RD.Framework.main.RDRanching.Items.Animals.Carcass
 {
     [Serialized] 
     [LocDisplayName("Angus Cow Carcass")] 
-    [Weight(5500)]
+    [Weight(7500)]
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
     [LocDescription("A Cow Body.")] 
     public partial class AngusCowCarcassItem : Item
@@ -16,7 +16,7 @@ namespace RD.Framework.main.RDRanching.Items.Animals.Carcass
 
     [Serialized]
     [LocDisplayName("Dairy Cow Carcass")]
-    [Weight(5500)]
+    [Weight(7500)]
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
     [LocDescription("A Cow Body.")]
     public partial class DairyCowCarcassItem : Item

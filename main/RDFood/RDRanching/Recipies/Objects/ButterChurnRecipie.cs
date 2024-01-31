@@ -4,9 +4,9 @@ using Eco.Gameplay.Items.Recipes;
 using Eco.Gameplay.Skills;
 using Eco.Mods.TechTree;
 using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.Items.Objects;
+using RD.Framework.main.RDFood.RDRanching.Objects;
 
-namespace RD.Framework.main.RDFood.Recipies.Objects
+namespace RD.Framework.main.RDFood.RDRanching.Recipies.Objects
 {
     [RequiresSkill(typeof(CarpentrySkill), 1)]
     [Ecopedia("Work Stations", "Craft Tables", subPageName: "Butter Churn Item")]

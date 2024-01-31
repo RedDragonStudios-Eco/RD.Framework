@@ -5,11 +5,11 @@ using Eco.Shared.Localization;
 using Eco.Shared.Serialization;
 using Eco.Shared.Utils;
 
-namespace RD.Framework.main.RDFood.Items.Foods.Ingredients
+namespace RD.Framework.main.RDFood.RDRanching.Ingredients
 {
-    [Serialized] 
-    [LocDisplayName("Egg")] 
-    [Weight(10)] 
+    [Serialized]
+    [LocDisplayName("Egg")]
+    [Weight(10)]
     [Ecopedia("Food", "Items", createAsSubPage: true)]
     [LocDescription("An egg From a Chicken")]
     public partial class EggItem : FoodItem

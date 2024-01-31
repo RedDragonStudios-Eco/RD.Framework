@@ -3,11 +3,11 @@ using Eco.Gameplay.Components;
 using Eco.Gameplay.Items.Recipes;
 using Eco.Gameplay.Skills;
 using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.Items.Foods.Ingredients;
 using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
 using RD.Framework.main.RDRanching.Items.obj;
 using RD.Framework.main.RDRanching.Items;
 using RD.Framework.main.RDSkills.Ranching;
+using RD.Framework.main.RDFood.RDRanching.Ingredients;
 
 namespace RD.Framework.main.RDRanching.Recipies
 {

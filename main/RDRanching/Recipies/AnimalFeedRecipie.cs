@@ -1,6 +1,4 @@
-﻿using Eco.Core.Items;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Items.Recipes;
+﻿using Eco.Gameplay.Items.Recipes;
 using Eco.Mods.TechTree;
 using Eco.Shared.Localization;
 using RD.Framework.main.RDRanching.Items;
@@ -15,8 +13,8 @@ namespace RD.Framework.main.RDRanching.Recipies
             recipe.Init("Animal Feed", displayName: Localizer.DoStr("Animal Feed"),
             ingredients: new List<IngredientElement>
             {
-                new IngredientElement("Crop", 5),
-                new IngredientElement("Grain", 5),
+                new IngredientElement("Crop", 5, typeof(FarmingSkill), typeof(FarmingLavishResourcesTalent)),
+                new IngredientElement("Grain", 5, typeof(FarmingSkill), typeof(FarmingLavishResourcesTalent)),
             },
             items: new List<CraftingElement>
             {

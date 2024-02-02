@@ -20,7 +20,7 @@ namespace RD.Framework.main.RDRanching.Recipies
                 displayName: Localizer.DoStr("Hay Bale"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(("NaturalFiber"), 10, typeof(FarmingSkill)),
+                    new IngredientElement(("NaturalFiber"), 10, typeof(FarmingSkill), typeof(FarmingLavishResourcesTalent))
                 },
                 items: new List<CraftingElement>
                 {
@@ -30,11 +30,9 @@ namespace RD.Framework.main.RDRanching.Recipies
             this.ExperienceOnCraft = 1;
             this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(FarmingSkill));
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(HayBaleRecipe), start: 1.2f, skillType: typeof(FarmingSkill));
-
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Hay Bale"), recipeType: typeof(HayBaleRecipe));
             this.ModsPostInitialize();
-
             CraftingComponent.AddRecipe(tableType: typeof(FarmersTableObject), recipe: this);
         }
         partial void ModsPreInitialize();

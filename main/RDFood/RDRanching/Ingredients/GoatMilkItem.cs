@@ -10,7 +10,6 @@ namespace RD.Framework.main.RDFood.RDRanching.Ingredients
     [Weight(250)]
     [Ecopedia("Food", "Ingredients", createAsSubPage: true)]
     [Tag("Goat Milk")]
-    [Tag("Animal Milk")]
     [LocDescription("A Bucket of Rich & Creamy Milk, From a Goat")]
     public partial class GoatMilkItem : Item
     {

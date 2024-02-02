@@ -14,7 +14,7 @@ namespace RD.Framework.main.RDFood.RDRanching.Ingredients
     [LocDescription("An egg From a Chicken")]
     public partial class EggItem : FoodItem
     {
-        public override LocString DisplayNamePlural => Localizer.DoStr("Egg");
+        public override LocString DisplayNamePlural => Localizer.DoStr("Eggs");
         public override float Calories => 50;
         public override Nutrients Nutrition => new Nutrients() { Carbs = 0, Fat = 0, Protein = 2, Vitamins = 0 };
         protected override float BaseShelfLife => (float)TimeUtil.HoursToSeconds(96);

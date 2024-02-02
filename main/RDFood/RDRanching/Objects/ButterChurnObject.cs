@@ -55,7 +55,7 @@ namespace RD.Framework.main.RDFood.RDRanching.Objects
     [IconGroup("World Object Minimap")]
     [Ecopedia("Work Stations", "Craft Tables", createAsSubPage: true)]
     [Weight(5000)]
-    [AllowPluginModules(Tags = new[] { "BasicUpgrade" }, ItemTypes = new[] { typeof(CookingUpgradeItem) })]
+    [AllowPluginModules(Tags = new[] { "BasicUpgrade" }, ItemTypes = new[] { typeof(CampfireCookingUpgradeItem) })]
     public partial class ButterChurnItem : WorldObjectItem<ButterChurnObject>, IPersistentData
     {
         protected override OccupancyContext GetOccupancyContext => new SideAttachedContext(0 | DirectionAxisFlags.Down, WorldObject.GetOccupancyInfo(WorldObjectType));

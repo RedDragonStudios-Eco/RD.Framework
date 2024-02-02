@@ -27,6 +27,7 @@ namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcherAnimal
                     new CraftingElement<RawPorkRoastItem>(6),
                     new CraftingElement<RawBaconItem>(5),
                     new CraftingElement<RawPorkButtItem>(2),
+                    new CraftingElement<TallowItem>(4),
                     new CraftingElement<LeatherHideItem>(1),
                 });
             this.Recipes = new List<Recipe> { recipe };

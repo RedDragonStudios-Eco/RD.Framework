@@ -16,6 +16,6 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
     {
         public override float Calories => 1800;
         public override Nutrients Nutrition => new Nutrients() { Carbs = 25, Fat = 8, Protein = 7, Vitamins = 19 };
-        protected override float BaseLivingTime => (float)TimeUtil.HoursToSeconds(72);
+        protected override float BaseShelfLife => (float)TimeUtil.HoursToSeconds(72);
     }
 }

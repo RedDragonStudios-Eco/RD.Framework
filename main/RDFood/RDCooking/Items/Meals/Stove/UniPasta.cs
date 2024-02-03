@@ -16,6 +16,6 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.Stove
     {
         public override float Calories => 1800;
         public override Nutrients Nutrition => new Nutrients() { Carbs = 16, Fat = 27, Protein = 6, Vitamins = 0 };
-        protected override float BaseLivingTime => (float)TimeUtil.HoursToSeconds(72);
+        protected override float BaseShelfLife => (float)TimeUtil.HoursToSeconds(72);
     }
 }

@@ -2,7 +2,6 @@
 using Eco.Mods.TechTree;
 using Eco.Simulation.Types;
 using Range = Eco.Shared.Math.Range;
-using RD.Framework.main.RDFood.RDRanching.Ingredients;
 using RD.Framework.main.RDRanching.Items.Animals.BabyAnimals;
 using System;
 using System.Collections.Generic;

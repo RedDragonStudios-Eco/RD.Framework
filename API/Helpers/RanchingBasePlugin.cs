@@ -15,6 +15,7 @@ using static Eco.Mods.TechTree.MountainGoat;
 using static Eco.Mods.TechTree.Turkey;
 using static Eco.Mods.TechTree.Agouti;
 using static Eco.Mods.TechTree.Hare;
+using static Eco.Mods.TechTree.PrairieDog;
 
 namespace RD.Framework.API.Helpers
 {
@@ -53,7 +54,7 @@ namespace RD.Framework.API.Helpers
             var hareList = hareSpecies.GetType().GetProperty("ResourceList", bindings).GetValue(hareSpecies) as List<SpeciesResource>;
             hareList.Add(new SpeciesResource(typeof(BabyHareItem), new Range(1, 3), 0.1f));
 
-            var prairieDogSpecies = typeof(PrairieDog).GetField("species", bindings).GetValue(typeof(PrairieDog)) as TurkeySpecies;
+            var prairieDogSpecies = typeof(PrairieDog).GetField("species", bindings).GetValue(typeof(PrairieDog)) as PrairieDogSpecies;
             var prairieDogList = prairieDogSpecies.GetType().GetProperty("ResourceList", bindings).GetValue(prairieDogSpecies) as List<SpeciesResource>;
             prairieDogList.Add(new SpeciesResource(typeof(BabyPrairieDogItem), new Range(1, 3), 0.1f));
 
@@ -64,7 +65,7 @@ namespace RD.Framework.API.Helpers
 
         public override string ToString() => "EM Farming";
 
-        public string GetCategory() => "Food";
+        public string GetCategory() => "Natural Resources";
 
     }
 }

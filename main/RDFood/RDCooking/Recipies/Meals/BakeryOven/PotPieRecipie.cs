@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven;
-
-namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.BakeryOven
+﻿namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.BakeryOven
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven;
+
     [RequiresSkill(typeof(BakingSkill), 3)]
     [Ecopedia("PotPie", "Baking", subPageName: "Pot Pie Item")]
     public partial class PotPieRecipe : RecipeFamily

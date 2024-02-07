@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using Eco.Shared.Serialization;
-
-namespace RD.Framework.main.RDSkills.Ranching
+﻿namespace RD.Framework.main.RDSkills.Ranching
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using Eco.Shared.Serialization;
+
     [Serialized]
     [LocDisplayName("Focused Workflow: Rancher")]
     public partial class RancherFocusedWorkflowTalentGroup : TalentGroup

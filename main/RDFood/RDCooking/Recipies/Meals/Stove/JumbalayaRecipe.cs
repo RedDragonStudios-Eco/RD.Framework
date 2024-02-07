@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.Stove;
-
-namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Stove
+﻿namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Stove
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.Stove;
+
     [RequiresSkill(typeof(AdvancedCookingSkill), 6)]
     [Ecopedia("Jumbalaya", "Cooking", subPageName: "Jumbalaya Item")]
     public partial class JumbalayaRecipe : RecipeFamily

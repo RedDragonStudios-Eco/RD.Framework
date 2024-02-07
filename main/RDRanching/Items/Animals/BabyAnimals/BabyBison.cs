@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Items;
-using Eco.Shared.Localization;
-using Eco.Shared.Serialization;
-
-namespace RD.Framework.main.RDRanching.Items.Animals.BabyAnimals
+﻿namespace RD.Framework.main.RDRanching.Items.Animals.BabyAnimals
 {
-    [Serialized] // Tells the save/load system this object needs to be serialized. 
-    [LocDisplayName("Baby Bison")] // Defines the localized name of the item.
-    [Weight(2500)] // Defines how heavy BabyBison is.
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Items;
+    using Eco.Shared.Localization;
+    using Eco.Shared.Serialization;
+
+    [Serialized]
+    [LocDisplayName("Baby Bison")] 
+    [Weight(2500)] 
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
-    [LocDescription("A baby bison.")] //The tooltip description for the item.
+    [LocDescription("A baby bison.")] 
     public partial class BabyBisonItem : Item
     {
 

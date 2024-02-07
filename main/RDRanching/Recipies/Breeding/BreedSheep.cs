@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDRanching.Items;
-using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
-using RD.Framework.main.RDRanching.Items.obj;
-using RD.Framework.main.RDSkills.Ranching;
-
-namespace RD.Framework.main.RDRanching.Recipies.Breeding
+﻿namespace RD.Framework.main.RDRanching.Recipies.Breeding
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDRanching.Items;
+    using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
+    using RD.Framework.main.RDRanching.Items.obj;
+    using RD.Framework.main.RDSkills.Ranching;
+
     [RequiresSkill(typeof(RancherSkill), 2)]
     [Ecopedia("Items", "Products", subPageName: "Breed Sheep")]
     public partial class BreedSheepRecipe : RecipeFamily

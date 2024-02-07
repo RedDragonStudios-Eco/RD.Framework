@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
-using RD.Framework.main.RDRanching.Items.Animals.Carcass;
-using RD.Framework.main.RDRanching.Items.obj;
-using RD.Framework.main.RDSkills.Ranching;
-
-namespace RD.Framework.main.RDRanching.Recipies.Slaughtery
+﻿namespace RD.Framework.main.RDRanching.Recipies.Slaughtery
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
+    using RD.Framework.main.RDRanching.Items.Animals.Carcass;
+    using RD.Framework.main.RDRanching.Items.obj;
+    using RD.Framework.main.RDSkills.Ranching;
+
     [RequiresSkill(typeof(RancherSkill), 4)]
     [Ecopedia("Items", "Products", subPageName: "Slaughter Chicken")]
     public partial class SlaughterChickenRecipe : RecipeFamily

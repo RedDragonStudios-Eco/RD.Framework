@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
-
-namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
+﻿namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
+
     [RequiresSkill(typeof(CookingSkill), 5)]
     [Ecopedia("FishBurger", "Cooking", subPageName: "Fish Burger Item")]
     public partial class FishBurgerRecipe : RecipeFamily

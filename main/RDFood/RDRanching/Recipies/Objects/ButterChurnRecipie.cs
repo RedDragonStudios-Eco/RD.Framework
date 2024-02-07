@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDRanching.Objects;
-
-namespace RD.Framework.main.RDFood.RDRanching.Recipies.Objects
+﻿namespace RD.Framework.main.RDFood.RDRanching.Recipies.Objects
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDRanching.Objects;
+
     [RequiresSkill(typeof(CarpentrySkill), 1)]
     [Ecopedia("Work Stations", "Craft Tables", subPageName: "Butter Churn Item")]
     public partial class ButterChurnRecipe : RecipeFamily

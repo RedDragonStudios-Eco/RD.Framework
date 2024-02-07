@@ -1,33 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components.Auth;
-using Eco.Gameplay.Components.Storage;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Housing;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Objects;
-using Eco.Gameplay.Occupancy;
-using Eco.Shared.Serialization;
-using Eco.Shared.Items;
-using Eco.Shared.Localization;
-using Eco.Gameplay.Modules;
-using Eco.Mods.TechTree;
-using Eco.Core.Controller;
-using Eco.Gameplay.Housing.PropertyValues;
-using Eco.Gameplay.Systems.NewTooltip;
-using Eco.Gameplay.Systems.TextLinks;
-using Eco.Shared.Math;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Shared.Utils;
-
-namespace RD.Framework.main.RDRanching.Items.obj
+﻿namespace RD.Framework.main.RDRanching.Items.obj
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components.Auth;
+    using Eco.Gameplay.Components.Storage;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Housing;
+    using Eco.Gameplay.Items;
+    using Eco.Gameplay.Objects;
+    using Eco.Gameplay.Occupancy;
+    using Eco.Shared.Serialization;
+    using Eco.Shared.Items;
+    using Eco.Shared.Localization;
+    using Eco.Gameplay.Modules;
+    using Eco.Mods.TechTree;
+    using Eco.Core.Controller;
+    using Eco.Gameplay.Housing.PropertyValues;
+    using Eco.Gameplay.Systems.NewTooltip;
+    using Eco.Gameplay.Systems.TextLinks;
+    using Eco.Shared.Math;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Shared.Utils;
+
     [Serialized]
     [RequireComponent(typeof(OnOffComponent))]
     [RequireComponent(typeof(PropertyAuthComponent))]

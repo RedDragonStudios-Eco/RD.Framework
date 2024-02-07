@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.Kitchen;
-
-namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Kitchen
+﻿namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Kitchen
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.Kitchen;
+
     [RequiresSkill(typeof(AdvancedCookingSkill), 4)]
     [Ecopedia("Food", "Cooking", subPageName: "Beef Stroganoff Item")]
     public partial class BeefStroganoffRecipe : RecipeFamily

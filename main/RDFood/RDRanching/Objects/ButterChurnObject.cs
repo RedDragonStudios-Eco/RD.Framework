@@ -1,29 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Controller;
-using Eco.Core.Items;
-using Eco.Gameplay.Components.Auth;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Housing.PropertyValues;
-using Eco.Gameplay.Housing;
-using Eco.Gameplay.Items;
-using Eco.Gameplay.Modules;
-using Eco.Gameplay.Objects;
-using Eco.Gameplay.Occupancy;
-using Eco.Gameplay.Systems.NewTooltip;
-using Eco.Gameplay.Systems.TextLinks;
-using Eco.Mods.TechTree;
-using Eco.Shared.Items;
-using Eco.Shared.Localization;
-using Eco.Shared.Math;
-using Eco.Shared.Serialization;
-
-namespace RD.Framework.main.RDFood.RDRanching.Objects
+﻿namespace RD.Framework.main.RDFood.RDRanching.Objects
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Controller;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components.Auth;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Housing.PropertyValues;
+    using Eco.Gameplay.Housing;
+    using Eco.Gameplay.Items;
+    using Eco.Gameplay.Modules;
+    using Eco.Gameplay.Objects;
+    using Eco.Gameplay.Occupancy;
+    using Eco.Gameplay.Systems.NewTooltip;
+    using Eco.Gameplay.Systems.TextLinks;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Items;
+    using Eco.Shared.Localization;
+    using Eco.Shared.Math;
+    using Eco.Shared.Serialization;
+
     [Serialized]
     [RequireComponent(typeof(OnOffComponent))]
     [RequireComponent(typeof(PropertyAuthComponent))]

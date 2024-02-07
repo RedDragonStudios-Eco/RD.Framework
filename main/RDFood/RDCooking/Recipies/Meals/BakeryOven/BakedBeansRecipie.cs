@@ -1,19 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.Bakery_Oven;
-
+﻿
 namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.Bakery_Oven;
+
     [RequiresSkill(typeof(BakingSkill), 2)]
     [Ecopedia("Food", "Baking", subPageName: "Baked Beans Item")]
     public partial class BakedBeansRecipe : RecipeFamily

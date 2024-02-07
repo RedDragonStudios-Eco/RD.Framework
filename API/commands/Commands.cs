@@ -1,9 +1,9 @@
-﻿using Eco.Gameplay.Systems.Chat;
-using Eco.Gameplay.Systems.Messaging.Chat.Commands;
-using System.Reflection;
-
-namespace RD.Framework.API.commands
+﻿namespace RD.Framework.API.commands
 {
+    using Eco.Gameplay.Systems.Chat;
+    using Eco.Gameplay.Systems.Messaging.Chat.Commands;
+    using System.Reflection;
+
     [ChatCommandHandler]
     public class Commands
     {

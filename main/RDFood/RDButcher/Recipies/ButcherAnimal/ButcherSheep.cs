@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDButcher.Items;
-using RD.Framework.main.RDRanching.Items.Animals.Carcass;
-
-namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcherAnimal
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcherAnimal
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDButcher.Items;
+    using RD.Framework.main.RDRanching.Items.Animals.Carcass;
+
     [RequiresSkill(typeof(ButcherySkill), 3)]
     public partial class ButcherSheepRecipie : RecipeFamily
     {

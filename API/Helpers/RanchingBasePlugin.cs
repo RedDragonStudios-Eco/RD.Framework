@@ -1,24 +1,23 @@
-﻿using Eco.Core.Plugins.Interfaces;
-using Eco.Mods.TechTree;
-using Eco.Simulation.Types;
-using Range = Eco.Shared.Math.Range;
-using RD.Framework.main.RDRanching.Items.Animals.BabyAnimals;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using static Eco.Mods.TechTree.BighornSheep;
-using static Eco.Mods.TechTree.Bison;
-using static Eco.Mods.TechTree.MountainGoat;
-using static Eco.Mods.TechTree.Turkey;
-using static Eco.Mods.TechTree.Agouti;
-using static Eco.Mods.TechTree.Hare;
-using static Eco.Mods.TechTree.PrairieDog;
-
-namespace RD.Framework.API.Helpers
+﻿namespace RD.Framework.API.Helpers
 {
+    using Eco.Core.Plugins.Interfaces;
+    using Eco.Mods.TechTree;
+    using Eco.Simulation.Types;
+    using Range = Eco.Shared.Math.Range;
+    using RD.Framework.main.RDRanching.Items.Animals.BabyAnimals;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Reflection;
+    using System.Text;
+    using System.Threading.Tasks;
+    using static Eco.Mods.TechTree.BighornSheep;
+    using static Eco.Mods.TechTree.Bison;
+    using static Eco.Mods.TechTree.MountainGoat;
+    using static Eco.Mods.TechTree.Turkey;
+    using static Eco.Mods.TechTree.Agouti;
+    using static Eco.Mods.TechTree.Hare;
+    using static Eco.Mods.TechTree.PrairieDog;
     public class FarmingBasePlugin : IModKitPlugin, IModInit
     {
         public string GetStatus()

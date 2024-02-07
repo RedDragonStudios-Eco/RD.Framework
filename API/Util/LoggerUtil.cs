@@ -1,10 +1,10 @@
-﻿using Eco.Core.Utils.Logging;
-using Eco.Shared.Localization;
-using Eco.Shared.Utils;
-using System.Reflection;
-
-namespace RD.Framework.API.Util
+﻿namespace RD.Framework.API.Util
 {
+    using Eco.Core.Utils.Logging;
+    using Eco.Shared.Localization;
+    using Eco.Shared.Utils;
+    using System.Reflection;
+
     public class LogUtility
     {
         private static string rdLogger = "RD-Framework";

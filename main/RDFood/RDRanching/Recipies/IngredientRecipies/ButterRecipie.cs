@@ -1,20 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Ingredients;
-using RD.Framework.main.RDFood.RDRanching.Ingredients;
-using RD.Framework.main.RDFood.RDRanching.Objects;
-using RD.Framework.main.RDSkills.Ranching;
-
-namespace RD.Framework.main.RDFood.RDRanching.Recipies.IngredientRecipies
+﻿namespace RD.Framework.main.RDFood.RDRanching.Recipies.IngredientRecipies
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Ingredients;
+    using RD.Framework.main.RDFood.RDRanching.Ingredients;
+    using RD.Framework.main.RDFood.RDRanching.Objects;
+    using RD.Framework.main.RDSkills.Ranching;
+
     [RequiresSkill(typeof(RancherSkill), 4)]
     public partial class ChurnButterRecipe : RecipeFamily
     {

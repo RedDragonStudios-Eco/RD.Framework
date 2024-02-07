@@ -1,22 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
-using RD.Framework.main.RDRanching.Items.obj;
-using RD.Framework.main.RDRanching.Items;
-using RD.Framework.main.RDSkills.Ranching;
-using RD.Framework.main.RDFood.RDRanching.Ingredients;
-
-namespace RD.Framework.main.RDFood.RDRanching.Recipies.IngredientRecipies
+﻿namespace RD.Framework.main.RDFood.RDRanching.Recipies.IngredientRecipies
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
+    using RD.Framework.main.RDRanching.Items.obj;
+    using RD.Framework.main.RDRanching.Items;
+    using RD.Framework.main.RDSkills.Ranching;
+    using RD.Framework.main.RDFood.RDRanching.Ingredients;
+
+
     [RequiresSkill(typeof(RancherSkill), 3)]
     [Ecopedia("Food", "Ingredients", createAsSubPage: true)]
     public partial class ChickenLaysEggsRecipe : RecipeFamily

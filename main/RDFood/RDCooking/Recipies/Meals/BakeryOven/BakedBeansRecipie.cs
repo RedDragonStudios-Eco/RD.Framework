@@ -27,8 +27,8 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
                 ingredients: new List<IngredientElement>
                 {
                    new IngredientElement(typeof(RawBaconItem), 5, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
-                   new IngredientElement(typeof(BeansItem), 20, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
-                   new IngredientElement(typeof(TomatoItem), 10, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
+                   new IngredientElement(typeof(BeansItem), 12, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
+                   new IngredientElement(typeof(TomatoItem), 8, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
@@ -37,7 +37,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 3;
             this.LaborInCalories = CreateLaborInCaloriesValue(45, typeof(BakingSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BakedBeansRecipe), start: 2.0f, skillType: typeof(BakingSkill), typeof(BakingFocusedSpeedTalent), typeof(BakingParallelSpeedTalent));
+            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BakedBeansRecipe), start: 4.0f, skillType: typeof(BakingSkill), typeof(BakingFocusedSpeedTalent), typeof(BakingParallelSpeedTalent));
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Baked Beans"), recipeType: typeof(BakedBeansRecipe));
             this.ModsPostInitialize();

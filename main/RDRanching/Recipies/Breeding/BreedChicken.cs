@@ -13,8 +13,8 @@
     using Eco.Shared.Localization;
     using RD.Framework.main.RDRanching.Items;
     using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
-    using RD.Framework.main.RDRanching.Items.obj;
     using RD.Framework.main.RDSkills.Ranching;
+    using RD.Framework.main.RDRanching.Items.obj;
 
     [RequiresSkill(typeof(RancherSkill), 1)]
     [Ecopedia("Items", "Products", subPageName: "Breed Chicken")]
@@ -43,7 +43,7 @@
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Breed Chicken"), recipeType: typeof(BreedChickenRecipe));
             this.ModsPostInitialize();
-            CraftingComponent.AddRecipe(tableType: typeof(BarnObject), recipe: this);
+            CraftingComponent.AddRecipe(tableType: typeof(NurseryObject), recipe: this);
         }
 
         partial void ModsPreInitialize();

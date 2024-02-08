@@ -43,7 +43,7 @@
             this.Initialize(displayText: Localizer.DoStr("Breed Sheep"), recipeType: typeof(BreedSheepRecipe));
             this.ModsPostInitialize();
 
-            CraftingComponent.AddRecipe(tableType: typeof(BarnObject), recipe: this);
+            CraftingComponent.AddRecipe(tableType: typeof(NurseryObject), recipe: this);
         }
         partial void ModsPreInitialize();
         partial void ModsPostInitialize();

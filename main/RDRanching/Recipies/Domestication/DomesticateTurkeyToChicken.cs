@@ -16,6 +16,7 @@ namespace RD.Framework.main.RDRanching.Recipies.Domestication
     using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
     using RD.Framework.main.RDRanching.Items.Animals.BabyAnimals;
     using RD.Framework.main.RDRanching.Items.obj;
+    using RD.Framework.main.RDSkills.Ranching;
 
     [RequiresSkill(typeof(HuntingSkill), 1)]
     public partial class DomesticateTurkeyRecipe : RecipeFamily
@@ -38,8 +39,8 @@ namespace RD.Framework.main.RDRanching.Recipies.Domestication
 
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 3.0f; 
-            this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(HuntingSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(DomesticateTurkeyRecipe), start: .75f, skillType: typeof(HuntingSkill));
+            this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(RancherSkill));
+            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(DomesticateTurkeyRecipe), start: .75f, skillType: typeof(RancherSkill));
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Domesticate Turkey"), recipeType: typeof(DomesticateTurkeyRecipe));
             this.ModsPostInitialize();

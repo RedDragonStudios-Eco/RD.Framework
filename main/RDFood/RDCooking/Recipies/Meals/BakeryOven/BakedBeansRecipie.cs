@@ -16,7 +16,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.Bakery_Oven;
 
     [RequiresSkill(typeof(BakingSkill), 2)]
-    [Ecopedia("Food", "Baking", subPageName: "Baked Beans Item")]
+    [Ecopedia("Food", "Baked Food", subPageName: "Baked Beans Item")]
     public partial class BakedBeansRecipe : RecipeFamily
     {
         public BakedBeansRecipe()

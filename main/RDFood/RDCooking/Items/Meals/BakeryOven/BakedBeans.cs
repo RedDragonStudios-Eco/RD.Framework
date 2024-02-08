@@ -16,7 +16,7 @@
     [Serialized]
     [LocDisplayName("Baked Beans")]
     [Weight(1)]
-    [Ecopedia("Food", "Baking", createAsSubPage: true)]
+    [Ecopedia("Food", "Baked Food", createAsSubPage: true)]
     [LocDescription("Baked Beans in a savoury-sweet sauce with chopped Bacon. (Caution) Consumption May Lead to Excessive Amounts of Farting.")]
     public partial class BakedBeansItem : FoodItem
     {

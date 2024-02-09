@@ -31,7 +31,7 @@ using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(GrilledChickenItem), 2, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(FiddleheadItem), 3, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(FiddleheadsItem), 3, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
                    new IngredientElement(typeof(BannockItem), 1, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
                   },
 
@@ -43,7 +43,7 @@ using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
                     new CraftingElement<ForestChickenGyroItem>(1)
                 });
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 2.5; // Defines how much experience is gained when crafted.
+            this.ExperienceOnCraft = 2.5f; // Defines how much experience is gained when crafted.
             
             // Defines the amount of labor required and the required skill to add labor
             this.LaborInCalories = CreateLaborInCaloriesValue(20, typeof(CampfireCookingSkill));

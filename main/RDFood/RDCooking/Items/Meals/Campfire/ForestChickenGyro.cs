@@ -1,4 +1,4 @@
-namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire
+﻿namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire
 {
     using System;
     using System.Collections.Generic;
@@ -13,16 +13,16 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire
     using Eco.Shared.Serialization;
     using Eco.Shared.Utils;
 
-    [Serialized] 
-    [LocDisplayName("Grilled Chicken")] 
+    [Serialized]
+    [LocDisplayName("Forest Chicken Gyro")]
     [Weight(250)]
     [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
-    [LocDescription("Winner winner chicken dinner.")] 
-    public partial class GrilledChickenItem : FoodItem
+    [LocDescription("Gyro or Gyro?.")]
+    public partial class ForestChickenGyroItem : FoodItem
     {
-        public override LocString DisplayNamePlural => Localizer.DoStr("Grilled Chicken");
-        public override float Calories => 600;
-        public override Nutrients Nutrition => new Nutrients() { Carbs = 0, Fat = 2, Protein = 8, Vitamins = 0 };
+        public override LocString DisplayNamePlural => Localizer.DoStr("Forest Chicken Gyro");
+        public override float Calories => 1550;
+        public override Nutrients Nutrition => new Nutrients() { Carbs = 17, Fat = 8, Protein = 12, Vitamins = 5 };
         protected override float BaseShelfLife => (float)TimeUtil.HoursToSeconds(96);
     }
 }

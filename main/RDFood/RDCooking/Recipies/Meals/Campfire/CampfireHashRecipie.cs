@@ -1,21 +1,20 @@
- using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
- 
  namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Campfire
  {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDCooking.Items.Meals.Campfire;
 
- [RequiresSkill(typeof(CookingSkill), 3)]
+    [RequiresSkill(typeof(CookingSkill), 3)]
     [Ecopedia("Food", "Cooking", subPageName: "Campfire Hash")]
     public partial class CampfireHashRecipe : RecipeFamily
     {
@@ -43,7 +42,7 @@ using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
                     new CraftingElement<CampfireHashItem>(1)
                 });
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 3; // Defines how much experience is gained when crafted.
+            this.ExperienceOnCraft = 3f; // Defines how much experience is gained when crafted.
             
             // Defines the amount of labor required and the required skill to add labor
             this.LaborInCalories = CreateLaborInCaloriesValue(45, typeof(CampfireCookingSkill));

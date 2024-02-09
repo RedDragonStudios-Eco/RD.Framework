@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
-
-namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
+﻿namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
+
     [RequiresSkill(typeof(CookingSkill), 3)]
     [Ecopedia("Food", "Cooking", subPageName: "Falafel Item")]
     public partial class FalafelRecipe : RecipeFamily
@@ -35,7 +35,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
                     new CraftingElement<FalafelItem>(5)
                 });
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 2;
+            this.ExperienceOnCraft = 2f;
             this.LaborInCalories = CreateLaborInCaloriesValue(30, typeof(CookingSkill));
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(FalafelRecipe), start: 1.0f, skillType: typeof(CookingSkill), typeof(CookingFocusedSpeedTalent), typeof(CookingParallelSpeedTalent));
             this.ModsPreInitialize();

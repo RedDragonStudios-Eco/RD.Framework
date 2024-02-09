@@ -1,22 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove; 
-using RD.Framework.main.RDFood.RDButcher.Items;
-
  namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
  {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
+    using RD.Framework.main.RDFood.RDButcher.Items;
 
- [RequiresSkill(typeof(CookingSkill), 3)]
+    [RequiresSkill(typeof(CookingSkill), 3)]
     [Ecopedia("Food", "Cooking", subPageName: "Pulled Pork")]
     public partial class PulledPorkRecipe : RecipeFamily
     {
@@ -43,7 +42,7 @@ using RD.Framework.main.RDFood.RDButcher.Items;
                     new CraftingElement<PulledPorkItem>(1)
                 });
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 1.5; // Defines how much experience is gained when crafted.
+            this.ExperienceOnCraft = 1.5f; // Defines how much experience is gained when crafted.
             
             // Defines the amount of labor required and the required skill to add labor
             this.LaborInCalories = CreateLaborInCaloriesValue(45, typeof(CookingSkill));

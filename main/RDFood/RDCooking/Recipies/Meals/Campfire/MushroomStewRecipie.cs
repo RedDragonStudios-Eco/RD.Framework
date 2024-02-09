@@ -1,21 +1,20 @@
- using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
- 
  namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Campfire
  {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
 
- [RequiresSkill(typeof(CampfireCookingSkill), 6)]
+    [RequiresSkill(typeof(CampfireCookingSkill), 6)]
     [Ecopedia("Food", "Cooking", subPageName: "Mushroom Stew")]
     public partial class MushroomStewRecipe : RecipeFamily
     {
@@ -30,9 +29,9 @@ using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
                 // type of the item, the amount of the item, the skill required, and the talent used.
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(BoleteMushroomItem), 6, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(CriminiMushroomItem), 6, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(WiltedFiddleheadItem), 2, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
+                    new IngredientElement(typeof(BoleteMushroomsItem), 6, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(CriminiMushroomsItem), 6, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(WiltedFiddleheadsItem), 2, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
                     new IngredientElement(typeof(TallowItem), 1, typeof(CampfireCookingSkill), typeof(CampfireCookingLavishResourcesTalent)),
                 },
 
@@ -44,7 +43,7 @@ using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
                     new CraftingElement<MushroomStewItem>(1)
                 });
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 2; // Defines how much experience is gained when crafted.
+            this.ExperienceOnCraft = 2f; // Defines how much experience is gained when crafted.
             
             // Defines the amount of labor required and the required skill to add labor
             this.LaborInCalories = CreateLaborInCaloriesValue(20, typeof(CampfireCookingSkill));

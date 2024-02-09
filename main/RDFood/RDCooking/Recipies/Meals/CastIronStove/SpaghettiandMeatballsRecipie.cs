@@ -1,21 +1,20 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel;
-using Eco.Core.Items;
-using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
-
 namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.ComponentModel;
+    using Eco.Core.Items;
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
 
-[RequiresSkill(typeof(CookingSkill), 5)]
+    [RequiresSkill(typeof(CookingSkill), 5)]
     [Ecopedia("Food", "Cooking", subPageName: "Spaghetti and Meatballs")]
     public partial class SpaghettiandMeatballsRecipe : RecipeFamily
     {
@@ -31,7 +30,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(MeatballItem), 2, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(RiceNoodleItem), 3, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(RiceNoodlesItem), 3, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
                    new IngredientElement(typeof(TomatoItem), 2, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
                 },
 
@@ -43,7 +42,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
                     new CraftingElement<SpaghettiandMeatballsItem>(1)
                 });
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 3; // Defines how much experience is gained when crafted.
+            this.ExperienceOnCraft = 3f; // Defines how much experience is gained when crafted.
             
             // Defines the amount of labor required and the required skill to add labor
             this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(CookingSkill));

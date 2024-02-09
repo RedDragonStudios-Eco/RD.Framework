@@ -34,7 +34,7 @@
                     new CraftingElement<BeetHummusItem>(3)
                 });
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 2;
+            this.ExperienceOnCraft = 2f;
             this.LaborInCalories = CreateLaborInCaloriesValue(30, typeof(CookingSkill));
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BeetHummusRecipe), start: 1.0f, skillType: typeof(CookingSkill), typeof(CookingFocusedSpeedTalent), typeof(CookingParallelSpeedTalent));
             this.ModsPreInitialize();

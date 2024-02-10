@@ -17,7 +17,7 @@
     using RD.Framework.main.RDRanching.Items.obj;
 
     [RequiresSkill(typeof(RancherSkill), 1)]
-    [Ecopedia("Items", "Products", subPageName: "Breed Chicken")]
+    [Ecopedia("Items", "Products", subPageName: "Chicken")]
     public partial class BreedChickenRecipe : RecipeFamily
     {
         public BreedChickenRecipe()
@@ -37,7 +37,7 @@
                 });
 
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 5;
+            this.ExperienceOnCraft = 5f;
             this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(RancherSkill));
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BreedChickenRecipe), start: 0.5f, skillType: typeof(RancherSkill));
             this.ModsPreInitialize();

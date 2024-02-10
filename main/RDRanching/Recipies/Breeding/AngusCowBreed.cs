@@ -11,15 +11,15 @@
     using RD.Framework.main.RDSkills.Ranching;
 
     [RequiresSkill(typeof(RancherSkill), 1)]
-    [Ecopedia("Items", "Products", subPageName: "Angu Cow")]
+    [Ecopedia("Items", "Products", subPageName: "Angus Cow")]
     public partial class AngusCowRecipe : RecipeFamily
     {
         public AngusCowRecipe()
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "AngusCow",
-                displayName: Localizer.DoStr("Angus Cow"),
+                name: "BreedAngusCow",
+                displayName: Localizer.DoStr("Breed Angus Cow"),
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(CowItem), 2, true),
@@ -37,7 +37,7 @@
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(AngusCowRecipe), start: 5.0f, skillType: typeof(RancherSkill));
 
             ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Angus Cow"), recipeType: typeof(AngusCowRecipe));
+            Initialize(displayText: Localizer.DoStr("Breed Angus Cow"), recipeType: typeof(AngusCowRecipe));
             ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(NurseryObject), recipe: this);

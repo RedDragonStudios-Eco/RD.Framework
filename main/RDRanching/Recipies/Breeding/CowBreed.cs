@@ -11,33 +11,33 @@
     using Eco.Gameplay.Skills;
 
     [RequiresSkill(typeof(RancherSkill), 1)]
-    [Ecopedia("Items", "Products", subPageName: "Dairy Cow")]
-    public partial class DairyCowRecipe : RecipeFamily
+    [Ecopedia("Items", "Products", subPageName: "Cow")]
+    public partial class CowRecipe : RecipeFamily
     {
-        public DairyCowRecipe()
+        public CowRecipe()
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "BreedDairyCow",
-                displayName: Localizer.DoStr("Breed Dairy Cow"),
+                name: "BreedCow",
+                displayName: Localizer.DoStr("Breed Cow"),
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(CowItem), 2, true),
                     new IngredientElement(typeof(AnimalFeedItem), 6, true),
                 },
                 items: new List<CraftingElement>
-                { 
-                    new CraftingElement<DairyCowItem>(1)
+                {
+                    new CraftingElement<CowItem>(1)
                 });
             Recipes = new List<Recipe> { recipe };
-            ExperienceOnCraft = 5;
+            ExperienceOnCraft = 5f;
 
             LaborInCalories = CreateLaborInCaloriesValue(70, typeof(RancherSkill));
 
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(DairyCowRecipe), start: 5.0f, skillType: typeof(RancherSkill));
 
             ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Breed Dairy Cow"), recipeType: typeof(DairyCowRecipe));
+            Initialize(displayText: Localizer.DoStr("Breed Cow"), recipeType: typeof(DairyCowRecipe));
             ModsPostInitialize();
 
             CraftingComponent.AddRecipe(tableType: typeof(NurseryObject), recipe: this);

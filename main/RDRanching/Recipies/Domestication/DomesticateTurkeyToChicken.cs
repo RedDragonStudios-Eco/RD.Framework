@@ -17,8 +17,10 @@ namespace RD.Framework.main.RDRanching.Recipies.Domestication
     using RD.Framework.main.RDRanching.Items.Animals.BabyAnimals;
     using RD.Framework.main.RDRanching.Items.obj;
     using RD.Framework.main.RDSkills.Ranching;
+    using Eco.Core.Items;
 
     [RequiresSkill(typeof(HuntingSkill), 1)]
+    [Ecopedia("Items", "Products", subPageName: "Chicken")]
     public partial class DomesticateTurkeyRecipe : RecipeFamily
     {
         public DomesticateTurkeyRecipe()

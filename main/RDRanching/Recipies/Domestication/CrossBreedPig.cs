@@ -25,8 +25,8 @@
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "Pig",
-                displayName: Localizer.DoStr("Pig"),
+                name: "CrossBreedPig",
+                displayName: Localizer.DoStr("CrossBreed Pig"),
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(BabyAgoutiItem), 1, true),
@@ -42,7 +42,7 @@
             LaborInCalories = CreateLaborInCaloriesValue(70, typeof(HuntingSkill));
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(CrossBreedingPigRecipe), start: 5, skillType: typeof(HuntingSkill));
             ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Pig"), recipeType: typeof(CrossBreedingPigRecipe));
+            Initialize(displayText: Localizer.DoStr("CrossBreed Pig"), recipeType: typeof(CrossBreedingPigRecipe));
             ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(NurseryObject), recipe: this);
         }

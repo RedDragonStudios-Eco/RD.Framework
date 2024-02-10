@@ -29,7 +29,7 @@
             });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 0.6f;
-            CraftMinutes = CreateLaborInCaloriesValue(30, typeof(FarmingSkill));
+            LaborInCalories = CreateLaborInCaloriesValue(30, typeof(FarmingSkill));
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(AnimalFeedRecipe), start: 1, skillType: typeof(FarmingSkill));
             ModsPreInitialize();
             Initialize(displayText: Localizer.DoStr("Animal Feed"), recipeType: typeof(AnimalFeedRecipe));

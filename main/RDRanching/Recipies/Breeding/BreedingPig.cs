@@ -17,7 +17,7 @@
     using RD.Framework.main.RDRanching.Items.obj;
 
     [RequiresSkill(typeof(RancherSkill), 1)]
-    [Ecopedia("Items", "Products", subPageName: "Breed Pig")]
+    [Ecopedia("Items", "Products", subPageName: "Pig")]
     public partial class BreedPigRecipe : RecipeFamily
     {
         public BreedPigRecipe()

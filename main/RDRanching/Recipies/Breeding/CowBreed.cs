@@ -27,7 +27,7 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<CowItem>(1)
+                    new CraftingElement<CowItem>(3)
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 5f;

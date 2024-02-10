@@ -17,7 +17,7 @@
     using RD.Framework.main.RDRanching.Items.Animals.BabyAnimals;
     using RD.Framework.main.RDRanching.Items.obj;
 
-    [RequiresSkill(typeof(HunterSkill), 3)]
+    [RequiresSkill(typeof(HuntingSkill), 3)]
     [Ecopedia("Items", "Animal", subPageName: "Pig")]
     public partial class CrossBreedingPigRecipe : RecipeFamily
     {

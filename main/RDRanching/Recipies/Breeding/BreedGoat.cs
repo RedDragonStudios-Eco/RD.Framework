@@ -17,31 +17,31 @@
     using RD.Framework.main.RDRanching.Items.obj;
 
     [RequiresSkill(typeof(RancherSkill), 1)]
-    [Ecopedia("Items", "Products", subPageName: "Breed Pig")]
-    public partial class BreedPigRecipe : RecipeFamily
+    [Ecopedia("Items", "Products", subPageName: "Breed Goat")]
+    public partial class BreedGoatRecipe : RecipeFamily
     {
-        public BreedPigRecipe()
+        public BreedGoatRecipe()
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "BreedPig",
-                displayName: Localizer.DoStr("Breed Pig"),
+                name: "BreedGoat",
+                displayName: Localizer.DoStr("Breed Goat"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(PigItem), 2, true),
+                    new IngredientElement(typeof(GoatItem), 2, true),
                     new IngredientElement(typeof(AnimalFeedItem), 2, true),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<PigItem>(3),
+                    new CraftingElement<GoatItem>(3),
                 });
 
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 5f;
+            this.ExperienceOnCraft = 5;
             this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(RancherSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BreedPigRecipe), start: 0.5f, skillType: typeof(RancherSkill));
+            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BreedGoatRecipe), start: 0.5f, skillType: typeof(RancherSkill));
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Breed Pig"), recipeType: typeof(BreedPigRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Breed Goat"), recipeType: typeof(BreedGoatRecipe));
             this.ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(NurseryObject), recipe: this);
         }

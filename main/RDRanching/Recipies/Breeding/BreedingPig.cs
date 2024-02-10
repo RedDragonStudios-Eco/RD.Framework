@@ -10,42 +10,42 @@
     using Eco.Gameplay.Components;
     using Eco.Gameplay.Items.Recipes;
     using Eco.Gameplay.Skills;
-    using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDRanching.Items;
     using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
-    using RD.Framework.main.RDRanching.Items.Animals.BabyAnimals;
+    using RD.Framework.main.RDSkills.Ranching;
     using RD.Framework.main.RDRanching.Items.obj;
 
-    [RequiresSkill(typeof(HunterSkill), 3)]
-    [Ecopedia("Items", "Animal", subPageName: "Pig")]
-    public partial class PigRecipe : RecipeFamily
+    [RequiresSkill(typeof(RancherSkill), 1)]
+    [Ecopedia("Items", "Products", subPageName: "Breed Chicken")]
+    public partial class BreedPigRecipe : RecipeFamily
     {
-        public PigRecipe()
+        public BreedPigRecipe()
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "Pig",
-                displayName: Localizer.DoStr("Pig"),
+                name: "BreedPig",
+                displayName: Localizer.DoStr("Breed Pig"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(BabyAgoutiItem), 1, true),
-                    new IngredientElement(typeof(BabyPrairieDogItem), 1, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 3, true),
+                    new IngredientElement(typeof(PigItem), 2, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 2, true),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<PigItem>(1)
+                    new CraftingElement<PigItem>(3),
                 });
+
             this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 5;
-            this.LaborInCalories = CreateLaborInCaloriesValue(70, typeof(HuntingSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(PigRecipe), start: 5, skillType: typeof(HuntingSkill));
+            this.ExperienceOnCraft = 5f;
+            this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(RancherSkill));
+            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BreedPigRecipe), start: 0.5f, skillType: typeof(RancherSkill));
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Pig"), recipeType: typeof(PigRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Breed Pig"), recipeType: typeof(BreedPigRecipe));
             this.ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(NurseryObject), recipe: this);
         }
+
         partial void ModsPreInitialize();
         partial void ModsPostInitialize();
     }

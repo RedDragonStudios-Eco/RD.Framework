@@ -14,7 +14,7 @@
     using Eco.Shared.Localization;
     using RD.Framework.main.RDCooking.Items.Meals.Campfire;
 
-    [RequiresSkill(typeof(CookingSkill), 3)]
+    [RequiresSkill(typeof(CampfireCookingSkill), 3)]
     [Ecopedia("Food", "Cooking", subPageName: "Campfire Hash")]
     public partial class CampfireHashRecipe : RecipeFamily
     {

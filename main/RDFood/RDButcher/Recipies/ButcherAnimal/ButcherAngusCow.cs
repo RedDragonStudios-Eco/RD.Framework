@@ -38,7 +38,7 @@
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;
-            LaborInCalories = CreateLaborInCaloriesValue(50, typeof(ButcherySkill));
+            LaborInCalories = CreateLaborInCaloriesValue(300, typeof(ButcherySkill));
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ButcherAngusCow), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
             Initialize(displayText: Localizer.DoStr("Butcher Angus Cow"), recipeType: typeof(ButcherAngusCow));

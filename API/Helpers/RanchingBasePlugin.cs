@@ -56,13 +56,9 @@
             var prairieDogSpecies = typeof(PrairieDog).GetField("species", bindings).GetValue(typeof(PrairieDog)) as PrairieDogSpecies;
             var prairieDogList = prairieDogSpecies.GetType().GetProperty("ResourceList", bindings).GetValue(prairieDogSpecies) as List<SpeciesResource>;
             prairieDogList.Add(new SpeciesResource(typeof(BabyPrairieDogItem), new Range(0, 3), 0.1f));
-
-
-            //ConsoleColors.PrintConsoleMultiColored("[EM Farming]", System.ConsoleColor.Magenta, " Added Baby Animals: Bison, Mountain Goat, Bighorn Sheep", System.ConsoleColor.White);
-
         }
 
-        public override string ToString() => "EM Farming";
+        public override string ToString() => "RD Ranching";
 
         public string GetCategory() => "Natural Resources";
 

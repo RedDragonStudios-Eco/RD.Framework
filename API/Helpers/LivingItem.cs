@@ -7,6 +7,7 @@
     using Eco.Shared.Serialization;
     using Eco.Shared.Utils;
     using Eco.Shared.View;
+
     [Compostable]
     public partial class LivingItem : DurabilityItem, IStackableMergable
     {

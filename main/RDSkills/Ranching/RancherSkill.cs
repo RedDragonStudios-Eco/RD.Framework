@@ -83,10 +83,10 @@
                 Localizer.DoStr("Rancher Skill Book"),
                 new List<IngredientElement>
                 {
-                    new IngredientElement("FriedVegetable", 9, true),
-                    new IngredientElement("CampfireSalad", 15, true),
-                    new IngredientElement(typeof(PlantFibersItem), 60, true),
-                    new IngredientElement("Raw Food", 45, true),
+                    new IngredientElement(typeof(GatheringResearchPaperBasicItem), 5, true),
+                    new IngredientElement(typeof(AgricultureResearchPaperAdvancedItem), 5, true),
+                    new IngredientElement(typeof(CulinaryResearchPaperBasicItem), 5, true),
+                    new IngredientElement("Baby Animals", 10, true),
                 },
                 new List<CraftingElement>
                 {

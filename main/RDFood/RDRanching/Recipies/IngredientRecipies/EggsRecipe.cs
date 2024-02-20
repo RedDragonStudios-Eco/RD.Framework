@@ -19,7 +19,7 @@
 
 
     [RequiresSkill(typeof(RancherSkill), 3)]
-    [Ecopedia("Food", "Ingredients", createAsSubPage: true)]
+    [Ecopedia("Food", "Ingredients", subPageName: "Egg")]
     public partial class ChickenLaysEggsRecipe : RecipeFamily
     {
         public ChickenLaysEggsRecipe()

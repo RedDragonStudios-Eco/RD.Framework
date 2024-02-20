@@ -12,10 +12,11 @@
     using Eco.Shared.Serialization;
 
     [Serialized]
-    [LocDisplayName("Bucket of Milk")]
+    [LocDisplayName("Dairy Milk")]
     [Weight(250)]
     [Ecopedia("Food", "Ingredients", createAsSubPage: true)]
     [Tag("Milk")]
+    [Tag("Dairy Milk")]
     [LocDescription("A Bucket of Rich & Creamy Milk, From a Dairy Cow")]
     public partial class CowMilkItem : Item
     {

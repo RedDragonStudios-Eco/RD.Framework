@@ -18,7 +18,7 @@
     using RD.Framework.main.RDFood.RDRanching.Ingredients;
 
     [RequiresSkill(typeof(RancherSkill), 2)]
-    [Ecopedia("Food", "Ingredients", createAsSubPage: true)]
+    [Ecopedia("Food", "Ingredients", subPageName: "Dairy Milk")]
     public partial class MilkTheCowRecipe : RecipeFamily
     {
         public MilkTheCowRecipe()

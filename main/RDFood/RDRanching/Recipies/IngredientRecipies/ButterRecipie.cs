@@ -14,8 +14,10 @@
     using RD.Framework.main.RDFood.RDRanching.Ingredients;
     using RD.Framework.main.RDFood.RDRanching.Objects;
     using RD.Framework.main.RDSkills.Ranching;
+    using Eco.Core.Items;
 
     [RequiresSkill(typeof(RancherSkill), 4)]
+    [Ecopedia("Food", "Ingredients", subPageName: "Butter")]
     public partial class ChurnButterRecipe : RecipeFamily
     {
         public ChurnButterRecipe()

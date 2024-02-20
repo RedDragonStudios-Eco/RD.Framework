@@ -13,7 +13,7 @@
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDButcher.Items;
     using RD.Framework.main.RDRanching.Items.Animals.Carcass;
-    using RD.Framework.main.RDRanching.Items.Animals;
+    using RD.Framework.main.RDUtil.Items;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
     public partial class ButcherChickenRecipie : RecipeFamily
@@ -32,7 +32,7 @@
                 {
                     new CraftingElement<RawChickenBreastItem>(2),
                     new CraftingElement<RawChickenWingItem>(2),
-                    new CraftingElement<ChickenFeathersItem>(5),
+                    new CraftingElement<FeathersItem>(5),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;

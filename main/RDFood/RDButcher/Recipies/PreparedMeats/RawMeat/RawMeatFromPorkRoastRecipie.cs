@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.PreparedMeats
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.PreparedMeats.RawMeat
 {
     using System;
     using System.Collections.Generic;
@@ -30,13 +30,13 @@
                 {
                     new CraftingElement<RawMeatItem>(2)
                 });
-            this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 4;
-            this.LaborInCalories = CreateLaborInCaloriesValue(15, typeof(ButcherySkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawMeatFromPorkRoastRecipe), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
-            this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Prepare Raw Meat From Pork Roast"), recipeType: typeof(RawMeatFromPorkRoastRecipe));
-            this.ModsPostInitialize();
+            Recipes = new List<Recipe> { recipe };
+            ExperienceOnCraft = 4;
+            LaborInCalories = CreateLaborInCaloriesValue(15, typeof(ButcherySkill));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawMeatFromPorkRoastRecipe), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
+            ModsPreInitialize();
+            Initialize(displayText: Localizer.DoStr("Prepare Raw Meat From Pork Roast"), recipeType: typeof(RawMeatFromPorkRoastRecipe));
+            ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
         }
         partial void ModsPreInitialize();

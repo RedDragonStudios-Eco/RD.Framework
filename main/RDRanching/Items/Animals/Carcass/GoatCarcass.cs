@@ -14,10 +14,10 @@
     [Serialized] 
     [LocDisplayName("Goat Carcass")] 
     [Weight(250)] 
-    [Ecopedia("Items", "Food", createAsSubPage: true)]
+    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
     [Tag("Carcass")]
     [Tag("Goat Carcass")]
-    [LocDescription("A Dead Goat")] 
+    [LocDescription("A Dead Goat.")] 
     public partial class GoatCarcassItem : Item
     {
 

@@ -14,7 +14,7 @@
     [Serialized]
     [LocDisplayName("Goat")]
     [Weight(250)] 
-    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Ecopedia("Animals", "Mammals", createAsSubPage: true)]
     [LocDescription("A Goat")] 
     public partial class GoatItem : Item
     {

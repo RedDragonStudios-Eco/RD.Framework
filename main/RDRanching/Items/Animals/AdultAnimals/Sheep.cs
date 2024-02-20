@@ -14,7 +14,7 @@
     [Serialized] 
     [LocDisplayName("Sheep")] 
     [Weight(4000)] 
-    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Ecopedia("Animals", "Mammals", createAsSubPage: true)]
     [LocDescription("An animal that can be bred for its wool.")] 
     public partial class SheepItem : Item
     {

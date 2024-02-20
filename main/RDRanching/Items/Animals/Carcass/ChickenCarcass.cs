@@ -14,10 +14,10 @@
     [Serialized] 
     [LocDisplayName("Chicken Carcass")] 
     [Weight(500)]
-    [Ecopedia("Items", "Food", createAsSubPage: true)]
+    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
     [Tag("Chicken Carcass")]
     [Tag("Poultry")]
-    [LocDescription("A Chicken you can bread purley for meat production")] 
+    [LocDescription("A Dead Chicken")] 
     public partial class ChickenCarcassItem : Item
     {
     }

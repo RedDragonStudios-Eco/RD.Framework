@@ -16,9 +16,11 @@ namespace RD.Framework.main.RDRanching.Recipies.Slaughtery
     using RD.Framework.main.RDRanching.Items.Animals.Carcass;
     using RD.Framework.main.RDRanching.Items.obj;
     using RD.Framework.main.RDSkills.Ranching;
+    using Eco.Shared.Properties;
+    using Eco.Simulation.Agents;
 
     [RequiresSkill(typeof(RancherSkill), 5)]
-    [Ecopedia("Items", "Products", subPageName: "Slaughter Angus Cow")]
+    [Ecopedia("Natural Resources", "Animal", subPageName: "Angus Cow Carcass")]
     public partial class SlaughterAngusCowRecipe : RecipeFamily
     {
         public SlaughterAngusCowRecipe()
@@ -49,7 +51,7 @@ namespace RD.Framework.main.RDRanching.Recipies.Slaughtery
     }
 
     [RequiresSkill(typeof(RancherSkill), 5)]
-    [Ecopedia("Items", "Products", subPageName: "Slaughter Dairy Cow")]
+    [Ecopedia("Natural Resources", "Animal", subPageName: "Dairy Cow Carcass")]
     public partial class SlaughterDairyCowRecipe : RecipeFamily
     {
         public SlaughterDairyCowRecipe()

@@ -14,8 +14,7 @@
     [Serialized] 
     [LocDisplayName("Pig")] 
     [Weight(4000)] 
-    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
-    [Tag("Pig")]
+    [Ecopedia("Animals", "Mammals", createAsSubPage: true)]
     [Tag("Pig")]
     [LocDescription("A Pig you can breed purely for meat production")] 
     public partial class PigItem : Item

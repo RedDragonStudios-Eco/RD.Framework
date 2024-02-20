@@ -17,7 +17,7 @@
     using RD.Framework.main.RDSkills.Ranching;
 
     [RequiresSkill(typeof(RancherSkill), 5)]
-    [Ecopedia("Natural Resources", "Animal", subPageName: "Slaughter Pig")]
+    [Ecopedia("Natural Resources", "Animal", subPageName: "Pig Carcass")]
     public partial class SlaughterPigRecipe : RecipeFamily
     {
         public SlaughterPigRecipe()

@@ -17,7 +17,7 @@
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
     [Tag("Slaughter Rabbit")]
     [Tag("Rabbit Carcass")]
-    [LocDescription("A Dead Rabbit")]
+    [LocDescription("A Dead Rabbit.")]
     public partial class RabbitCarcassItem : Item
     {
     }

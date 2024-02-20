@@ -17,7 +17,7 @@
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
     [Tag("Slaughter Sheep")]
     [Tag("Sheep Carcass")]
-    [LocDescription("A Dead Sheep Body")] 
+    [LocDescription("A Dead Sheep.")] 
     public partial class SheepCarcassItem : Item
     {
     }

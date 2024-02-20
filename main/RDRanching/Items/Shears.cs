@@ -14,7 +14,7 @@
     [Serialized] 
     [LocDisplayName("Shears")] 
     [Weight(100)]
-    [Ecopedia("Natural Resources", "Tool", createAsSubPage: true)]
+    [Ecopedia("Items", "Tools", createAsSubPage: true)]
     [LocDescription("Shears to Shear Sheep.")] 
     public partial class ShearItem : Item
     {

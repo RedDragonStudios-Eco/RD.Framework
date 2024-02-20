@@ -14,7 +14,7 @@
     [Serialized]
     [LocDisplayName("Cow")]
     [Weight(5500)]
-    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Ecopedia("Animals", "Mammals", createAsSubPage: true)]
     [LocDescription("A Cow")]
     public partial class CowItem : Item
     {
@@ -23,7 +23,7 @@
     [Serialized]
     [LocDisplayName("Angus Cow")]
     [Weight(8000)]
-    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Ecopedia("Animals", "Mammals", subPageName: "Cow")]
     [Tag("Angus Cow")]
     [LocDescription("A Cow you can breed purely for butchery")]
     public partial class AngusCowItem : Item
@@ -32,7 +32,7 @@
     [Serialized]
     [LocDisplayName("Dairy Cow")]
     [Weight(8000)]
-    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Ecopedia("Animals", "Mammals", subPageName: "Cow")]
     [Tag("Dairy Cow")]
     [Tag("Dairy Cow")]
     [LocDescription("A Cow you can breed purely for Dairy products")]

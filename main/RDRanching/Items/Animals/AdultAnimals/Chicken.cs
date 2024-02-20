@@ -14,7 +14,7 @@
     [Serialized] 
     [LocDisplayName("Chicken")] 
     [Weight(1500)]
-    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Ecopedia("Animals", "Bird", createAsSubPage: true)]
     [LocDescription("A Chicken")] 
     public partial class ChickenItem : Item
     {

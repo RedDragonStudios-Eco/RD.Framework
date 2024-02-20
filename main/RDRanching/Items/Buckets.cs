@@ -14,7 +14,7 @@
     [Serialized]
     [LocDisplayName("Bucket")] 
     [Weight(500)]
-    [Ecopedia("Item", "Product", createAsSubPage: true)]
+    [Ecopedia("Items", "Product", createAsSubPage: true)]
     [LocDescription("A Bucket to collect Milk.")]
     public partial class BucketItem : Item
     {

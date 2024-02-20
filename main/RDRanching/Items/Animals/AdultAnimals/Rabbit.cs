@@ -14,7 +14,7 @@
     [Serialized]
     [LocDisplayName("Rabbit")]
     [Weight(1000)]
-    [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Ecopedia("Animals", "Mammals", createAsSubPage: true)]
     [LocDescription("A Rabbit")]
     public partial class RabbitItem : Item
     {

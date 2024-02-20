@@ -27,7 +27,7 @@ namespace RD.Framework.main.RDRanching.Recipies
     using RD.Framework.main.RDRanching.Items;
 
     [RequiresSkill(typeof(SmeltingSkill), 2)]
-    [Ecopedia("Items", "Products", subPageName: "Shears Item")]
+    [Ecopedia("Items", "Tools", subPageName: "Shears")]
     public partial class ShearsRecipe : RecipeFamily
     {
         public ShearsRecipe()
@@ -47,15 +47,11 @@ namespace RD.Framework.main.RDRanching.Recipies
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 5;
             this.LaborInCalories = CreateLaborInCaloriesValue(70, typeof(SmeltingSkill));
-
-            // Defines our crafting time for the recipe
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ShearsRecipe), start: 0.5f, skillType: typeof(SmeltingSkill));
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Craft Shears"), recipeType: typeof(ShearsRecipe));
             this.ModsPostInitialize();
-
-            // Register our RecipeFamily instance with the crafting system so it can be crafted.
-            CraftingComponent.AddRecipe(tableType: typeof(BloomeryObject), recipe: this);
+            CraftingComponent.AddRecipe(tableType: typeof(AnvilObject), recipe: this);
         }
         partial void ModsPreInitialize();
         partial void ModsPostInitialize();

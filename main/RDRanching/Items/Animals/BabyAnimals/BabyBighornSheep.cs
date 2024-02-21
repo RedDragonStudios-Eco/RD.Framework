@@ -15,6 +15,7 @@
     [LocDisplayName("Baby Bighorn Sheep")] 
     [Weight(1500)]
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Tag("Baby Animals")]
     [LocDescription("A Baby Bighorn Sheep.")]
     public partial class BabyBighornSheepItem : Item
     {

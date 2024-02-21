@@ -15,8 +15,8 @@
     [LocDisplayName("Rabbit Carcass")]
     [Weight(750)]
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
-    [Tag("Tiny Carcass")]
-    [Tag("Tiny Fur Carcass")]
+    [Tag("TinyCarcass")]
+    [Tag("TinyFurCarcass")]
     [LocDescription("A Dead Rabbit.")]
     public partial class RabbitCarcassItem : Item
     {

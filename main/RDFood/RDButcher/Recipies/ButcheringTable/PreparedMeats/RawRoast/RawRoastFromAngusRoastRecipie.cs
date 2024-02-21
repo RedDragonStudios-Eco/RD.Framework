@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.PreparedMeats.RawRoast
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.RawRoast
 {
     using System;
     using System.Collections.Generic;

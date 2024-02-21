@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcherAnimal
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.ButcherAnimal
 {
     using System;
     using System.Collections.Generic;
@@ -14,34 +14,33 @@
     using RD.Framework.main.RDFood.RDButcher.Items;
     using RD.Framework.main.RDRanching.Items.Animals.Carcass;
 
-    [RequiresSkill(typeof(ButcherySkill), 4)]
-    public partial class ButcherDairyCow : RecipeFamily
+    [RequiresSkill(typeof(ButcherySkill), 3)]
+    public partial class ButcherGoatRecipie : RecipeFamily
     {
-        public ButcherDairyCow()
+        public ButcherGoatRecipie()
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "ButcherDairyCow",
-                displayName: Localizer.DoStr("Butcher Dairy Cow"),
+                name: "ButcherGoat",
+                displayName: Localizer.DoStr("Butcher A Goat"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(DairyCowCarcassItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent)),
+                    new IngredientElement(typeof(GoatCarcassItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<ScrapMeatItem>(10),
-                    new CraftingElement<LeatherHideItem>(1),
+                    new CraftingElement<ScrapMeatItem>(6),
+                    new CraftingElement<ShornWoolItem>(2),
                 });
             Recipes = new List<Recipe> { recipe };
-            ExperienceOnCraft = 3;
+            ExperienceOnCraft = 4;
             LaborInCalories = CreateLaborInCaloriesValue(50, typeof(ButcherySkill));
-            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ButcherDairyCow), start: 1.2f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ButcherGoatRecipie), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Butcher Dairy Cow"), recipeType: typeof(ButcherDairyCow));
+            Initialize(displayText: Localizer.DoStr("Butcher A Goat"), recipeType: typeof(ButcherGoatRecipie));
             ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
         }
-
         partial void ModsPreInitialize();
         partial void ModsPostInitialize();
     }

@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.PreparedMeats.RawMeat
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.RawMeat
 {
     using System;
     using System.Collections.Generic;
@@ -14,17 +14,17 @@
     using RD.Framework.main.RDFood.RDButcher.Items;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
-    public partial class RawMeatFromBeefRoastRecipe : RecipeFamily
+    public partial class RawMeatFromPorkRoastRecipe : RecipeFamily
     {
-        public RawMeatFromBeefRoastRecipe()
+        public RawMeatFromPorkRoastRecipe()
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "PrepareRawMeatFromBeefRoast",
-                displayName: Localizer.DoStr("Prepare Raw Meat From Beef Roast"),
+                name: "PrepareRawMeatFromPorkRoast",
+                displayName: Localizer.DoStr("Prepare Raw Meat From Pork Roast"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(RawAngusRoastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent))
+                    new IngredientElement(typeof(RawPorkRoastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent))
                 },
                 items: new List<CraftingElement>
                 {
@@ -33,9 +33,9 @@
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;
             LaborInCalories = CreateLaborInCaloriesValue(15, typeof(ButcherySkill));
-            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawMeatFromBeefRoastRecipe), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawMeatFromPorkRoastRecipe), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Prepare Raw Meat From Beef Roast"), recipeType: typeof(RawMeatFromBeefRoastRecipe));
+            Initialize(displayText: Localizer.DoStr("Prepare Raw Meat From Pork Roast"), recipeType: typeof(RawMeatFromPorkRoastRecipe));
             ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
         }

@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcherAnimal
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.ButcherAnimal
 {
     using System;
     using System.Collections.Generic;
@@ -21,7 +21,7 @@
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "ButcherPig",  
+                name: "ButcherPig",
                 displayName: Localizer.DoStr("Butcher A Pig"),
                 ingredients: new List<IngredientElement>
                 {
@@ -36,13 +36,13 @@
                     new CraftingElement<TallowItem>(4),
                     new CraftingElement<LeatherHideItem>(1),
                 });
-            this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 4;
-            this.LaborInCalories = CreateLaborInCaloriesValue(350, typeof(ButcherySkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ButcherPigRecipe), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
-            this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Butcher A Pig"), recipeType: typeof(ButcherPigRecipe));
-            this.ModsPostInitialize();
+            Recipes = new List<Recipe> { recipe };
+            ExperienceOnCraft = 4;
+            LaborInCalories = CreateLaborInCaloriesValue(350, typeof(ButcherySkill));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ButcherPigRecipe), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
+            ModsPreInitialize();
+            Initialize(displayText: Localizer.DoStr("Butcher A Pig"), recipeType: typeof(ButcherPigRecipe));
+            ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
         }
         partial void ModsPreInitialize();

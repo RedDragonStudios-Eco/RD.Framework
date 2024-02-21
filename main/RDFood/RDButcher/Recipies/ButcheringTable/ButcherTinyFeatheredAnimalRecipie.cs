@@ -8,9 +8,9 @@
     using RD.Framework.main.RDUtil.Items;
 
     [RequiresSkill(typeof(ButcherySkill), 1)]
-    public partial class ButcherTinyFurAnimalRecipe : RecipeFamily
+    public partial class ButcherTinyFeatheredAnimalRecipe : RecipeFamily
     {
-        public ButcherTinyFurAnimalRecipe()
+        public ButcherTinyFeatheredAnimalRecipe()
         {
             var recipe = new Recipe();
             recipe.Init(
@@ -28,9 +28,9 @@
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 2;
             this.LaborInCalories = CreateLaborInCaloriesValue(25, typeof(ButcherySkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ButcherTinyFurAnimalRecipe), start: 0.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
+            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ButcherTinyFeatheredAnimalRecipe), start: 0.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Butcher Tiny Feathered Animal"), recipeType: typeof(ButcherTinyFurAnimalRecipe));
+            this.Initialize(displayText: Localizer.DoStr("Butcher Tiny Feathered Animal"), recipeType: typeof(ButcherTinyFeatheredAnimalRecipe));
             this.ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
         }

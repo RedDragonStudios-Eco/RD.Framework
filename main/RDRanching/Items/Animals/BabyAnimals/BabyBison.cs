@@ -15,6 +15,7 @@
     [LocDisplayName("Baby Bison")] 
     [Weight(2500)] 
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Tag("Baby Animals")]
     [LocDescription("A baby bison.")] 
     public partial class BabyBisonItem : Item
     {

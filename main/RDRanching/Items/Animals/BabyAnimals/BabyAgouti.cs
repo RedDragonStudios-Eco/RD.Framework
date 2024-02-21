@@ -16,6 +16,7 @@ namespace RD.Framework.main.RDRanching.Items.Animals.BabyAnimals
     [LocDisplayName("Baby Agouti")]
     [Weight(500)] 
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Tag("Baby Animals")]
     [LocDescription("A Baby Agouti.")]
     public partial class BabyAgoutiItem : Item
     {

@@ -23,7 +23,7 @@
                 displayName: Localizer.DoStr("Campfire Animal Large"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement("Large Carcass", 1, true),
+                    new IngredientElement("LargeAnimalCarcass", 1, true),
                 },
                 items: new List<CraftingElement>
                 {

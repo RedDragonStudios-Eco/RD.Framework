@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Items
+﻿namespace RD.Framework.main.RDFood.RDButcher.Items.RDRanching
 {
     using System;
     using System.Collections.Generic;
@@ -13,15 +13,15 @@
     using Eco.Shared.Serialization;
     using Eco.Shared.Utils;
 
-    [Serialized] 
-    [LocDisplayName("Raw Chicken Wings")] 
-    [Weight(150)] 
+    [Serialized]
+    [LocDisplayName("Raw Chicken Nuggets")]
+    [Weight(20)]
     [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
-    [LocDescription("Fresh raw meat from a Chicken. It should definitly be cooked before being consumed.")]
-    public partial class RawChickenWingItem : FoodItem
+    [LocDescription("Prepared Raw Chicken Nuggets. It should definitly be cooked before being consumed.")]
+    public partial class RawChickenNuggetItem : FoodItem
     {
-        public override LocString DisplayNamePlural => Localizer.DoStr("Raw Chicken Wings");
-        public override float Calories => 250;
+        public override LocString DisplayNamePlural => Localizer.DoStr("Raw Chicken Nuggets");
+        public override float Calories => 100;
         public override Nutrients Nutrition => new Nutrients() { Carbs = 0, Fat = 1, Protein = 2, Vitamins = 0 };
         protected override float BaseShelfLife => (float)TimeUtil.HoursToSeconds(96);
     }

@@ -1,5 +1,4 @@
-﻿
-namespace RD.Framework.main.RDFood.RDButcher.Items
+﻿namespace RD.Framework.main.RDFood.RDButcher.Items.RDRanching
 {
     using System;
     using System.Collections.Generic;
@@ -15,16 +14,16 @@ namespace RD.Framework.main.RDFood.RDButcher.Items
     using Eco.Shared.Utils;
 
     [Serialized]
-    [LocDisplayName("Raw Pork Chop")]
-    [Weight(50)]
+    [LocDisplayName("Raw Pork Roast")]
+    [Weight(250)]
     [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
-    [LocDescription("Fresh raw chops' from a Pig. It should probably be cooked before being consumed.")]
-    public partial class RawPorkChopItem : FoodItem
+    [LocDescription("Fresh raw roast from a Pig. It should probably be cooked before being consumed.")]
+    public partial class RawPorkRoastItem : FoodItem
     {
 
-        public override LocString DisplayNamePlural => Localizer.DoStr("Raw Pork Chops");
-        public override float Calories => 120;
-        public override Nutrients Nutrition => new Nutrients() { Carbs = 0, Fat = 2, Protein = 3, Vitamins = 0 };
+        public override LocString DisplayNamePlural => Localizer.DoStr("Raw Pork Roasts");
+        public override float Calories => 600;
+        public override Nutrients Nutrition => new Nutrients() { Carbs = 0, Fat = 2, Protein = 6, Vitamins = 0 };
         protected override float BaseShelfLife => (float)TimeUtil.HoursToSeconds(96);
     }
 }

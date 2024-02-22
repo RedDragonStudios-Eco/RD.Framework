@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Items
+﻿namespace RD.Framework.main.RDFood.RDButcher.Items.RDRanching
 {
     using System;
     using System.Collections.Generic;
@@ -13,11 +13,11 @@
     using Eco.Shared.Serialization;
     using Eco.Shared.Utils;
 
-    [Serialized] 
+    [Serialized]
     [LocDisplayName("Raw Angus Steak")]
-    [Weight(500)] 
+    [Weight(500)]
     [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
-    [LocDescription("Fresh raw steak From an Angus Cow. It should probably be cooked before being consumed.")] 
+    [LocDescription("Fresh raw steak From an Angus Cow. It should probably be cooked before being consumed.")]
     public partial class RawAngusSteakItem : FoodItem
     {
         public override LocString DisplayNamePlural => Localizer.DoStr("Raw Angus Steaks");

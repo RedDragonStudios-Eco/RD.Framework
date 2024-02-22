@@ -13,11 +13,10 @@
     using Eco.Shared.Serialization;
     using Eco.Shared.Utils;
 
-
-    [Serialized] // Tells the save/load system this object needs to be serialized. 
-    [LocDisplayName("Falafel")] // Defines the localized name of the item.
+    [Serialized]
+    [LocDisplayName("Falafel")]
     [Weight(1)]
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("A simple combination of Beans, herbs, spices, blended together and shaped into balls.")] 
     public partial class FalafelItem : FoodItem
     {

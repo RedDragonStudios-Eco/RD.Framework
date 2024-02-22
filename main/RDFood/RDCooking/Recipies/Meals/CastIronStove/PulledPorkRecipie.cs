@@ -1,5 +1,5 @@
- namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
- {
+namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
+{
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -13,10 +13,10 @@
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
-    using RD.Framework.main.RDFood.RDButcher.Items;
+    using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
 
     [RequiresSkill(typeof(CookingSkill), 3)]
-    [Ecopedia("Food", "Cooking", subPageName: "Pulled Pork")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Pulled Pork")]
     public partial class PulledPorkRecipe : RecipeFamily
     {
         public PulledPorkRecipe()

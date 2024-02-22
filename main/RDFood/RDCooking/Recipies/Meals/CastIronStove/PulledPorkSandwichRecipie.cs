@@ -15,7 +15,7 @@
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
 
     [RequiresSkill(typeof(CookingSkill), 6)]
-    [Ecopedia("Food", "Cooking", subPageName: "Pulled Pork Sandwich")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Pulled Pork Sandwich")]
     public partial class PulledPorkSandwichRecipe : RecipeFamily
     {
         public PulledPorkSandwichRecipe()

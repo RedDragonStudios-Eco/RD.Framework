@@ -16,7 +16,7 @@
     [Serialized]
     [LocDisplayName("Forest Chicken Gyro")]
     [Weight(250)]
-    [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("Gyro or Gyro?.")]
     public partial class ForestChickenGyroItem : FoodItem
     {

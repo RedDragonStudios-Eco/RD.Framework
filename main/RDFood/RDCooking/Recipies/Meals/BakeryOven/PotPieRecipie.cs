@@ -15,7 +15,7 @@
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven;
 
     [RequiresSkill(typeof(BakingSkill), 3)]
-    [Ecopedia("Food", subPageName: "Pot Pie Item")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Pot Pie Item")]
     public partial class PotPieRecipe : RecipeFamily
     {
         public PotPieRecipe()

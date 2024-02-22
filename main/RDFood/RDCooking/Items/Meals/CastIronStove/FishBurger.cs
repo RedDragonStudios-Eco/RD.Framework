@@ -15,8 +15,8 @@
 
     [Serialized] 
     [LocDisplayName("Fish Burger")] 
-    [Weight(1)] 
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [Weight(1)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("Fish Burger, Please Enjoy!")] 
     public partial class FishBurgerItem : FoodItem
     {

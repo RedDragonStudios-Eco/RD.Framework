@@ -15,7 +15,7 @@
     using RD.Framework.main.RDCooking.Items.Meals.Campfire;
 
     [RequiresSkill(typeof(CampfireCookingSkill), 3)]
-    [Ecopedia("Food", "Cooking", subPageName: "Campfire Hash")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Campfire Hash")]
     public partial class CampfireHashRecipe : RecipeFamily
     {
         public CampfireHashRecipe()

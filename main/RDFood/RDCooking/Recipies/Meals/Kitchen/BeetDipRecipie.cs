@@ -15,7 +15,7 @@
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.Kitchen;
 
     [RequiresSkill(typeof(CookingSkill), 3)]
-    [Ecopedia("Food", "Cooking", subPageName: "Beet Dip Item")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Beet Dip")]
     public partial class BeetDipRecipe : RecipeFamily
     {
         public BeetDipRecipe()

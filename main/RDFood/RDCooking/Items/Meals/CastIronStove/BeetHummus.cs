@@ -16,7 +16,7 @@
     [Serialized]
     [LocDisplayName("Beet Hummus")]
     [Weight(1)]
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("Who needs chickpeas when you have beets! The superfood with a touch of oil to make it really out of this world!")]
     public partial class BeetHummusItem : FoodItem
     {

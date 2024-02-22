@@ -13,10 +13,10 @@ namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
-    using RD.Framework.main.RDFood.RDButcher.Items;
+    using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
 
     [RequiresSkill(typeof(CookingSkill), 4)]
-    [Ecopedia("Food", "Cooking", subPageName: "Meatball")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Meatball")]
     public partial class MeatballRecipe : RecipeFamily
     {
         public MeatballRecipe()

@@ -15,7 +15,7 @@
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
 
     [RequiresSkill(typeof(CookingSkill), 3)]
-    [Ecopedia("Food", "Cooking", subPageName: "Falafel Item")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Falafel")]
     public partial class FalafelRecipe : RecipeFamily
     {
         public FalafelRecipe()
@@ -26,13 +26,13 @@
                 displayName: Localizer.DoStr("Falafel"),
                 ingredients: new List<IngredientElement>
                 {
-                   new IngredientElement(typeof(OilItem), 1, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(FlourItem), 3, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(BeansItem), 25, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(OilItem), 0.5f, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(FlourItem), 0.75f, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(BeansItem), 2f, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<FalafelItem>(5)
+                    new CraftingElement<FalafelItem>(1)
                 });
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 2;

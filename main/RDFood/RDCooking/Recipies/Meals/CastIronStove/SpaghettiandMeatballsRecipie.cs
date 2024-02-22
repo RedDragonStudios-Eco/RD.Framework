@@ -15,7 +15,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
 
     [RequiresSkill(typeof(CookingSkill), 5)]
-    [Ecopedia("Food", "Cooking", subPageName: "Spaghetti and Meatballs")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Spaghetti and Meatballs")]
     public partial class SpaghettiandMeatballsRecipe : RecipeFamily
     {
         public SpaghettiandMeatballsRecipe()

@@ -16,7 +16,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire
     [Serialized] 
     [LocDisplayName("Mushroom Stew")] 
     [Weight(250)]
-    [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("Vegan stew alternative.")] 
     public partial class MushroomStewItem : FoodItem
     {

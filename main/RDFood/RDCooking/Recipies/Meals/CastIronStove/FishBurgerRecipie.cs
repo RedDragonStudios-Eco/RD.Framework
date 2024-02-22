@@ -15,7 +15,7 @@
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
 
     [RequiresSkill(typeof(CookingSkill), 5)]
-    [Ecopedia("FishBurger", "Cooking", subPageName: "Fish Burger Item")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Fish Burger")]
     public partial class FishBurgerRecipe : RecipeFamily
     {
         public FishBurgerRecipe()
@@ -26,14 +26,14 @@
                 displayName: Localizer.DoStr("Fish Burger"),
                 ingredients: new List<IngredientElement>
                 {
-                   new IngredientElement(typeof(CharredFishItem), 2, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(BeetGreensItem), 3, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(CamasBreadItem), 1, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(CharredFishItem), 1, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(BeetGreensItem), 2, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement("Bread", 1, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
                    new IngredientElement(typeof(TomatoItem), 2, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<FishBurgerItem>(2)
+                    new CraftingElement<FishBurgerItem>(1)
                 });
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 2;

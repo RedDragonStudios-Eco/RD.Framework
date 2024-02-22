@@ -16,7 +16,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove
     [Serialized] 
     [LocDisplayName("Pulled Pork Sandwich")] 
     [Weight(250)]
-    [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("Pulled pork and cheese on two slices of bread.")] 
     public partial class PulledPorkSandwichItem : FoodItem
     {

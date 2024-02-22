@@ -15,8 +15,8 @@
 
     [Serialized]  
     [LocDisplayName("Jumbalaya")] 
-    [Weight(1)] 
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [Weight(1)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("Bringing Cajun cooking straight to you!")] 
     public partial class JumbalayaItem : FoodItem
     {

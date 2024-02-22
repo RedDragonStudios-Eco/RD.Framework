@@ -15,7 +15,7 @@
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.Stove;
 
     [RequiresSkill(typeof(AdvancedCookingSkill), 6)]
-    [Ecopedia("Jumbalaya", "Cooking", subPageName: "Jumbalaya Item")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Jumbalaya")]
     public partial class JumbalayaRecipe : RecipeFamily
     {
         public JumbalayaRecipe()

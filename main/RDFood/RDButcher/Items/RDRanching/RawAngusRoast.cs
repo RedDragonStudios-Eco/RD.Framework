@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Items.RDFood
+﻿namespace RD.Framework.main.RDFood.RDButcher.Items.RDRanching
 {
     using System;
     using System.Collections.Generic;

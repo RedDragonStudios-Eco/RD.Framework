@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Kitchen
+namespace RD.Framework.main.RDFood.RDCooking.Recipies.Ingredients
 {
     using Eco.Core.Items;
     using Eco.Gameplay.Components;
@@ -28,19 +28,19 @@ namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Kitchen
                 ingredients: new List<IngredientElement>
                 {
                    new IngredientElement(typeof(EggItem), 3, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
-                   new IngredientElement("Flour", 4, typeof(CookingSkill), typeof(CookingLavishResourcesTalent))
+                   new IngredientElement(typeof(FlourItem), 4, typeof(CookingSkill), typeof(CookingLavishResourcesTalent))
                 },
                 items: new List<CraftingElement>
                 {
                     new CraftingElement<PastaDoughItem>(1)
                 });
-            this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 2f;
-            this.LaborInCalories = CreateLaborInCaloriesValue(30, typeof(CookingSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(PastaDoughRecipe), start: 1.2f, skillType: typeof(CookingSkill), typeof(CookingFocusedSpeedTalent), typeof(CookingParallelSpeedTalent));
-            this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Pasta Dough"), recipeType: typeof(PastaDoughRecipe));
-            this.ModsPostInitialize();
+            Recipes = new List<Recipe> { recipe };
+            ExperienceOnCraft = 2f;
+            LaborInCalories = CreateLaborInCaloriesValue(30, typeof(CookingSkill));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(PastaDoughRecipe), start: 1.2f, skillType: typeof(CookingSkill), typeof(CookingFocusedSpeedTalent), typeof(CookingParallelSpeedTalent));
+            ModsPreInitialize();
+            Initialize(displayText: Localizer.DoStr("Pasta Dough"), recipeType: typeof(PastaDoughRecipe));
+            ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(KitchenObject), recipe: this);
         }
         partial void ModsPreInitialize();

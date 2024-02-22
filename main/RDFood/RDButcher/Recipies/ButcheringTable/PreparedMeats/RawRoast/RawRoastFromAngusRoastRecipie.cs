@@ -11,7 +11,7 @@
     using Eco.Gameplay.Skills;
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
-    using RD.Framework.main.RDFood.RDButcher.Items.Ranching;
+    using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
     public partial class RawRoastFromAngusRoastRecipe : RecipeFamily

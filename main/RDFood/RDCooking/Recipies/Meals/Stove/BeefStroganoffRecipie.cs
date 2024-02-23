@@ -30,7 +30,7 @@
                    new IngredientElement(typeof(ScrapMeatItem), 8, typeof(AdvancedCookingSkill), typeof(AdvancedCookingLavishResourcesTalent)),
                    new IngredientElement(typeof(MeatStockItem), 1, typeof(AdvancedCookingSkill), typeof(AdvancedCookingLavishResourcesTalent)),
                    new IngredientElement("Fungus", 8, typeof(AdvancedCookingSkill), typeof(AdvancedCookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(PastaNoodleItem), 1, typeof(AdvancedCookingSkill), typeof(AdvancedCookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(PastaNoodleItem), 2, typeof(AdvancedCookingSkill), typeof(AdvancedCookingLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {

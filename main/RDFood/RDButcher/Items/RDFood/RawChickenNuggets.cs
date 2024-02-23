@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Items.RDRanching
+﻿namespace RD.Framework.main.RDFood.RDButcher.Items.RDFood
 {
     using System;
     using System.Collections.Generic;
@@ -21,7 +21,7 @@
     public partial class RawChickenNuggetItem : FoodItem
     {
         public override LocString DisplayNamePlural => Localizer.DoStr("Raw Chicken Nuggets");
-        public override float Calories => 100;
+        public override float Calories => 50;
         public override Nutrients Nutrition => new Nutrients() { Carbs = 0, Fat = 1, Protein = 2, Vitamins = 0 };
         protected override float BaseShelfLife => (float)TimeUtil.HoursToSeconds(96);
     }

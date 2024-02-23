@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
 {
     using System;
     using System.Collections.Generic;
@@ -12,6 +12,7 @@
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
+    using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
     public partial class RawChickenTenderRecipe : RecipeFamily
@@ -28,12 +29,12 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawChickenTenderItem>(2)
+                    new CraftingElement<RawChickenTenderItem>(3)
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;
             LaborInCalories = CreateLaborInCaloriesValue(15, typeof(ButcherySkill));
-            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawChickenTenderRecipe), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawChickenTenderRecipe), start: 0.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
             Initialize(displayText: Localizer.DoStr("Raw Chicken Tender"), recipeType: typeof(RawChickenTenderRecipe));
             ModsPostInitialize();

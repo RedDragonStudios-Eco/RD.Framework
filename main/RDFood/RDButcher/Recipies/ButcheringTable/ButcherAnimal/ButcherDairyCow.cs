@@ -29,12 +29,12 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<ScrapMeatItem>(10),
+                    new CraftingElement<ScrapMeatItem>(30),
                     new CraftingElement<LeatherHideItem>(1),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 3;
-            LaborInCalories = CreateLaborInCaloriesValue(50, typeof(ButcherySkill));
+            LaborInCalories = CreateLaborInCaloriesValue(75, typeof(ButcherySkill));
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ButcherDairyCow), start: 1.2f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
             Initialize(displayText: Localizer.DoStr("Butcher Dairy Cow"), recipeType: typeof(ButcherDairyCow));

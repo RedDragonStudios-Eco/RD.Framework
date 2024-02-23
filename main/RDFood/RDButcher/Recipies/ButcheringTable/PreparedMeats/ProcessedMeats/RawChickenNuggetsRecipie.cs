@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.RawRoast
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
 {
     using System;
     using System.Collections.Generic;
@@ -12,30 +12,31 @@
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
+    using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
-    public partial class RawRoastFromAngusRoastRecipe : RecipeFamily
+    public partial class RawChickenNuggetRecipe : RecipeFamily
     {
-        public RawRoastFromAngusRoastRecipe()
+        public RawChickenNuggetRecipe()
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "PrepareRawRoastFromAngusRoast",
-                displayName: Localizer.DoStr("Prepare Raw Roast From Angus Roast"),
+                name: "PrepareRawChickenNugget",
+                displayName: Localizer.DoStr("Prepare Raw Chicken Nugget"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(RawAngusRoastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent))
+                    new IngredientElement(typeof(RawChickenBreastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent))
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawRoastItem>(1)
+                    new CraftingElement<RawChickenNuggetItem>(8)
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;
-            LaborInCalories = CreateLaborInCaloriesValue(15, typeof(ButcherySkill));
-            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawRoastFromAngusRoastRecipe), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
+            LaborInCalories = CreateLaborInCaloriesValue(20, typeof(ButcherySkill));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawChickenNuggetRecipe), start: 0.15f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Prepare Raw Roast FromAngus Roast"), recipeType: typeof(RawRoastFromAngusRoastRecipe));
+            Initialize(displayText: Localizer.DoStr("Raw Chicken Nugget"), recipeType: typeof(RawChickenNuggetRecipe));
             ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
         }

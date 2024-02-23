@@ -12,34 +12,27 @@
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
+    using Eco.Core.Items;
 
-    [RequiresSkill(typeof(ButcherySkill), 2)]
-    public partial class RawMeatFromBeefRoastRecipe : RecipeFamily
+    [RequiresSkill(typeof(ButcherySkill), 3)]
+    public partial class RawMeatFromBeefRoastRecipe : Recipe
     {
         public RawMeatFromBeefRoastRecipe()
         {
-            var recipe = new Recipe();
-            recipe.Init(
-                name: "PrepareRawMeatFromBeefRoast",
-                displayName: Localizer.DoStr("Prepare Raw Meat From Beef Roast"),
+            this.Init(
+                name: "RawMeatFromBeefRoast",
+                displayName: Localizer.DoStr("Raw Meat From Beef Roast"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(RawAngusRoastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent))
+                    new IngredientElement(typeof(RawAngusRoastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawMeatItem>(2)
+                    new CraftingElement<RawMeatItem>(2),
                 });
-            Recipes = new List<Recipe> { recipe };
-            ExperienceOnCraft = 4;
-            LaborInCalories = CreateLaborInCaloriesValue(15, typeof(ButcherySkill));
-            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawMeatFromBeefRoastRecipe), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
-            ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Prepare Raw Meat From Beef Roast"), recipeType: typeof(RawMeatFromBeefRoastRecipe));
-            ModsPostInitialize();
-            CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
+            this.ModsPostInitialize();
+            CraftingComponent.AddTagProduct(typeof(ButcheryTableObject), typeof(RawMeatFromRanchingRecipe), this);
         }
-        partial void ModsPreInitialize();
         partial void ModsPostInitialize();
     }
-}
+} 

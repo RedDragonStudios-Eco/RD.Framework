@@ -15,20 +15,20 @@
     using Eco.Core.Items;
 
     [RequiresSkill(typeof(ButcherySkill), 3)]
-    public partial class RawMeatFromPorkRoastRecipe : Recipe
+    public partial class RawMeatFromPorkButtRecipe : Recipe
     {
-        public RawMeatFromPorkRoastRecipe()
+        public RawMeatFromPorkButtRecipe()
         {
             this.Init(
-                name: "RawMeatFromPorkRoast",
-                displayName: Localizer.DoStr("Raw Meat From Pork Roast"),
+                name: "RawMeatFromPorkButt",
+                displayName: Localizer.DoStr("Raw Meat From Pork Butt"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(RawPorkRoastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent)),
+                    new IngredientElement(typeof(RawPorkButtItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawMeatItem>(2),
+                    new CraftingElement<RawMeatItem>(3),
                 });
             this.ModsPostInitialize();
             CraftingComponent.AddTagProduct(typeof(ButcheryTableObject), typeof(RawMeatFromRanchingRecipe), this);

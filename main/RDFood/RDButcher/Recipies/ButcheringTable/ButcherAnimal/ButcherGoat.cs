@@ -29,6 +29,7 @@
                 },
                 items: new List<CraftingElement>
                 {
+                    new CraftingElement<RawMeatItem>(3),
                     new CraftingElement<ScrapMeatItem>(6),
                     new CraftingElement<ShornWoolItem>(2),
                 });

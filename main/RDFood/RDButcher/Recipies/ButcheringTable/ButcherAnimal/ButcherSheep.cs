@@ -29,13 +29,13 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawMuttonItem>(10),
+                    new CraftingElement<RawMuttonItem>(6),
                     new CraftingElement<TallowItem>(2),
                     new CraftingElement<ShornWoolItem>(2),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;
-            LaborInCalories = CreateLaborInCaloriesValue(50, typeof(ButcherySkill));
+            LaborInCalories = CreateLaborInCaloriesValue(70, typeof(ButcherySkill));
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ButcherSheepRecipie), start: 1.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
             Initialize(displayText: Localizer.DoStr("Butcher A Sheep"), recipeType: typeof(ButcherSheepRecipie));

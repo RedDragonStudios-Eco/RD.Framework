@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.RawMeat
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.PrimeCut
 {
     using System;
     using System.Collections.Generic;
@@ -12,26 +12,25 @@
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
-    using Eco.Core.Items;
 
-    [RequiresSkill(typeof(ButcherySkill), 3)]
-    public partial class RawMeatFromPorkRoastRecipe : Recipe
+    [RequiresSkill(typeof(ButcherySkill), 6)]
+    public partial class PrimeCutFromAngusSteakRecipe : Recipe
     {
-        public RawMeatFromPorkRoastRecipe()
+        public PrimeCutFromAngusSteakRecipe()
         {
             this.Init(
-                name: "RawMeatFromPorkRoast",
-                displayName: Localizer.DoStr("Raw Meat From Pork Roast"),
+                name: "PrimeCutAngusSteak",
+                displayName: Localizer.DoStr("Prime Cut From Angus Steak"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(RawPorkRoastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent)),
+                    new IngredientElement(typeof(RawAngusSteakItem), 16, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawMeatItem>(2),
+                    new CraftingElement<PrimeCutItem>(1),
                 });
             this.ModsPostInitialize();
-            CraftingComponent.AddTagProduct(typeof(ButcheryTableObject), typeof(RawMeatFromRanchingRecipe), this);
+            CraftingComponent.AddTagProduct(typeof(ButcheryTableObject), typeof(PrimeCutRecipe), this);
         }
         partial void ModsPostInitialize();
     }

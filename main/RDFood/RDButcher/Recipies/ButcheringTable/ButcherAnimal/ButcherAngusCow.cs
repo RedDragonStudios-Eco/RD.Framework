@@ -32,7 +32,7 @@
                 {
                     new CraftingElement<RawAngusRoastItem>(4),
                     new CraftingElement<RawAngusSteakItem>(4),
-                    new CraftingElement<RawBeefRibsItem>(4),
+                    new CraftingElement<RawBeefRibsItem>(2),
                     new CraftingElement<ScrapMeatItem>(6),
                     new CraftingElement<TallowItem>(4),
                     new CraftingElement<LeatherHideItem>(1),

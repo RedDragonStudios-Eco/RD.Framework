@@ -29,7 +29,7 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawRabbitMeatItem>(5),
+                    new CraftingElement<RawRabbitMeatItem>(4),
                     new CraftingElement<FurPeltItem>(2),
                 });
             Recipes = new List<Recipe> { recipe };

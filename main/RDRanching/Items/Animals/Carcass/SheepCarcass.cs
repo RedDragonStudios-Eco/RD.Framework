@@ -12,11 +12,12 @@
     using Eco.Shared.Serialization;
 
     [Serialized]
-    [LocDisplayName("Slaughter Sheep")] 
+    [LocDisplayName("Sheep Carcass")] 
     [Weight(3500)]
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
-    [Tag("Slaughter Sheep")]
-    [Tag("Sheep Carcass")]
+    [Tag("MediumCarcass")]
+    [Tag("MediumWoolyCarcass")]
+    [Tag("SheepCarcass")]
     [LocDescription("A Dead Sheep.")] 
     public partial class SheepCarcassItem : Item
     {

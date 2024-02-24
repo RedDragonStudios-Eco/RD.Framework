@@ -16,6 +16,7 @@
     [LocDisplayName("Baby Mountain Goat")]
     [Weight(1000)] 
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Tag("BabyAnimals")]
     [LocDescription("A Baby Mountain Goat.")]
     public partial class BabyMountainGoatItem : Item
     {

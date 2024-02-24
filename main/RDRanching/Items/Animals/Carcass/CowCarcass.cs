@@ -15,6 +15,7 @@
     [LocDisplayName("Angus Cow Carcass")] 
     [Weight(7500)]
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Tag("LargeAnimalCarcass")]
     [LocDescription("A Dead Angus Cow.")] 
     public partial class AngusCowCarcassItem : Item
     {
@@ -24,6 +25,7 @@
     [LocDisplayName("Dairy Cow Carcass")]
     [Weight(7500)]
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Tag("LargeAnimalCarcass")]
     [LocDescription("A Dead Dariy Cow.")]
     public partial class DairyCowCarcassItem : Item
     {

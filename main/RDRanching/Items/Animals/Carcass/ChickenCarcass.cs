@@ -15,8 +15,8 @@
     [LocDisplayName("Chicken Carcass")] 
     [Weight(500)]
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
-    [Tag("Chicken Carcass")]
-    [Tag("Poultry")]
+    [Tag("TinyFeatheredCarcass")]
+    [Tag("TinyCarcass")]
     [LocDescription("A Dead Chicken")] 
     public partial class ChickenCarcassItem : Item
     {

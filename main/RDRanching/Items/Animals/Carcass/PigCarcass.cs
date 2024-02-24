@@ -15,8 +15,8 @@
     [LocDisplayName("Pig Carcass")] 
     [Weight(3500)] 
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
-    [Tag("Medium Carcass")]
-    [Tag("Pig Carcass")]
+    [Tag("MediumCarcass")]
+    [Tag("MediumLeatherCarcass")]
     [LocDescription("A Dead Pig.")] 
     public partial class PigCarcassItem : Item
     {

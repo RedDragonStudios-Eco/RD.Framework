@@ -15,7 +15,7 @@
 
     [Serialized]
     [LocDisplayName("Beet Dip")]
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("A light snack to tide you over till your next meal.")]
     public partial class BeetDipItem : FoodItem
     {

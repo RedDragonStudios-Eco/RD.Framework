@@ -1,5 +1,5 @@
- namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Campfire
- {
+namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Campfire
+{
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -13,11 +13,10 @@
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
-    using RD.Framework.main.RDFood.RDButcher.Items;
-
+    using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
 
     [RequiresSkill(typeof(CampfireCookingSkill), 4)]
-    [Ecopedia("Food", "Cooking", subPageName: "Grilled Chicken")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Grilled Chicken")]
     public partial class GrilledChickenRecipe : RecipeFamily
     {
         public GrilledChickenRecipe()

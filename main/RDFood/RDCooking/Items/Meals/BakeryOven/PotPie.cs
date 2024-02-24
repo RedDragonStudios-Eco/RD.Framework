@@ -15,8 +15,8 @@
 
     [Serialized] 
     [LocDisplayName("Pot Pie")] 
-    [Weight(1)] 
-    [Ecopedia("Food", "Baked Food", createAsSubPage: true)]
+    [Weight(1)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("A melody of vegtables and meat, baked in a savory pastry crust!")] 
     public partial class PotPieItem : FoodItem
     {

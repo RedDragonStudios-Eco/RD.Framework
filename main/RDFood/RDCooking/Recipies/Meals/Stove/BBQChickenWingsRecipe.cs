@@ -12,12 +12,12 @@
     using Eco.Gameplay.Skills;
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
-    using RD.Framework.main.RDFood.RDButcher.Items;
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.Stove;
     using RD.Framework.main.RDFood.RDRanching.Ingredients;
+    using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
 
     [RequiresSkill(typeof(CookingSkill), 3)]
-    [Ecopedia("Food", "Cooking", subPageName: "BBQ Chicken Wing")]
+    [Ecopedia("Food", "RDFoods", subPageName: "BBQ Chicken Wing")]
     public partial class BBQChickenWingRecipe : RecipeFamily
     {
         public BBQChickenWingRecipe()

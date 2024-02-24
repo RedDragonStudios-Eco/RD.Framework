@@ -15,6 +15,7 @@
     [LocDisplayName("Baby Turkey")] 
     [Weight(750)] 
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
+    [Tag("BabyAnimals")]
     [LocDescription("A Baby Turkey.")] 
     public partial class BabyTurkeyItem : Item
     {

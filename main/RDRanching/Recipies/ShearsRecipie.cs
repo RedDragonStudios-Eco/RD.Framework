@@ -34,11 +34,11 @@ namespace RD.Framework.main.RDRanching.Recipies
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "CraftSheers",  //noloc
-                displayName: Localizer.DoStr("Craft Sheers"),
+                name: "CraftShears",
+                displayName: Localizer.DoStr("Craft Shears"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(IronBarItem), 2, true),
+                    new IngredientElement(typeof(IronBarItem), 2, typeof(SmeltingSkill), typeof(SmeltingLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
@@ -47,7 +47,7 @@ namespace RD.Framework.main.RDRanching.Recipies
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 5;
             this.LaborInCalories = CreateLaborInCaloriesValue(70, typeof(SmeltingSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ShearsRecipe), start: 0.5f, skillType: typeof(SmeltingSkill));
+            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(ShearsRecipe), start: 0.5f, skillType: typeof(SmeltingSkill), typeof(SmeltingFocusedSpeedTalent), typeof(SmeltingParallelSpeedTalent));
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Craft Shears"), recipeType: typeof(ShearsRecipe));
             this.ModsPostInitialize();

@@ -17,7 +17,7 @@ namespace RD.Framework.main.RDCooking.Items.Meals.Campfire
     [Serialized] // Tells the save/load system this object needs to be serialized. 
     [LocDisplayName("Campfire Hash")] // Defines the localized name of the item.
     [Weight(1)] // Defines how heavy the BakedBeans is.
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("Not that kind of Hash...")] //The tooltip description for the food item.
     public partial class CampfireHashItem : FoodItem
     {

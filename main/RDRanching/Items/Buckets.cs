@@ -12,9 +12,9 @@
     using Eco.Shared.Serialization;
 
     [Serialized]
-    [LocDisplayName("Bucket")] 
+    [LocDisplayName("Wood Bucket")] 
     [Weight(500)]
-    [Ecopedia("Items", "Product", createAsSubPage: true)]
+    [Ecopedia("Items", "Products", createAsSubPage: true)]
     [LocDescription("A Bucket to collect Milk.")]
     public partial class BucketItem : Item
     {

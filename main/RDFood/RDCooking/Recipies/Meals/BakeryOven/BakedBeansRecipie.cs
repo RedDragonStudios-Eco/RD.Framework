@@ -16,7 +16,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.Bakery_Oven;
 
     [RequiresSkill(typeof(BakingSkill), 2)]
-    [Ecopedia("Food", subPageName: "Baked Beans Item")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Baked Beans Item")]
     public partial class BakedBeansRecipe : RecipeFamily
     {
         public BakedBeansRecipe()
@@ -28,12 +28,12 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
                 ingredients: new List<IngredientElement>
                 {
                    new IngredientElement(typeof(RawBaconItem), 5, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
-                   new IngredientElement(typeof(BeansItem), 20, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
-                   new IngredientElement(typeof(TomatoItem), 10, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
+                   new IngredientElement(typeof(BeansItem), 10, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
+                   new IngredientElement(typeof(TomatoItem), 5, typeof(BakingSkill), typeof(BakingLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<BakedBeansItem>(2)
+                    new CraftingElement<BakedBeansItem>(1)
                 });
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 3;

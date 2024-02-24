@@ -16,7 +16,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire
     [Serialized] 
     [LocDisplayName("Grilled Chicken")] 
     [Weight(250)]
-    [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("Winner winner chicken dinner.")] 
     public partial class GrilledChickenItem : FoodItem
     {

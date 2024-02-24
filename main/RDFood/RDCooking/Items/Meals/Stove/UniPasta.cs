@@ -15,8 +15,8 @@
 
     [Serialized]
     [LocDisplayName("Sea Urchin Pasta")] 
-    [Weight(1)] 
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [Weight(1)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("We had to figure out something to do with urchins, and this is what we came up with! Enjoy!!")] 
     public partial class SeaUrchinPastaItem : FoodItem
     {

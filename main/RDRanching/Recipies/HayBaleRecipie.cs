@@ -35,7 +35,7 @@
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 1;
             this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(FarmingSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(HayBaleRecipe), start: 1.2f, skillType: typeof(FarmingSkill));
+            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(HayBaleRecipe), start: 1.2f, skillType: typeof(FarmingSkill), typeof(FarmingFocusedSpeedTalent), typeof(FarmingParallelSpeedTalent));
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Hay Bale"), recipeType: typeof(HayBaleRecipe));
             this.ModsPostInitialize();

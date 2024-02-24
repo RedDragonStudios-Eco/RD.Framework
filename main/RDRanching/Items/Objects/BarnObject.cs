@@ -27,6 +27,7 @@
     using Eco.Gameplay.Items.Recipes;
     using Eco.Gameplay.Skills;
     using Eco.Shared.Utils;
+    using RD.Framework.main.RDSkills.Ranching;
 
     [Serialized]
     [RequireComponent(typeof(OnOffComponent))]
@@ -71,7 +72,7 @@
     [IconGroup("World Object Minimap")]
     [Ecopedia("Work Stations", "Craft Tables", createAsSubPage: true)]
     [Weight(25000)]
-    [AllowPluginModules(Tags = new[] { "BasicUpgrade" }, ItemTypes = new[] { typeof(FarmingUpgradeItem) })]
+    [AllowPluginModules(Tags = new[] { "BasicUpgrade" }, ItemTypes = new[] { typeof(RanchingUpgradeItem) })]
     public partial class BarnItem : WorldObjectItem<BarnObject>, IPersistentData
     {
         protected override OccupancyContext GetOccupancyContext => new SideAttachedContext(0 | DirectionAxisFlags.Down, WorldObject.GetOccupancyInfo(WorldObjectType));

@@ -86,7 +86,7 @@
                     new IngredientElement(typeof(GatheringResearchPaperBasicItem), 2, true),
                     new IngredientElement(typeof(AgricultureResearchPaperAdvancedItem), 5, true),
                     new IngredientElement(typeof(CulinaryResearchPaperBasicItem), 3, true),
-                    new IngredientElement("Baby Animals", 10, true),
+                    new IngredientElement("BabyAnimals", 10, true),
                 },
                 new List<CraftingElement>
                 {

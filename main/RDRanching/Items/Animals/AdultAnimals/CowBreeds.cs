@@ -34,7 +34,6 @@
     [Weight(8000)]
     [Ecopedia("Animals", "Mammals", subPageName: "Cow")]
     [Tag("Dairy Cow")]
-    [Tag("Dairy Cow")]
     [LocDescription("A Cow you can breed purely for Dairy products")]
     public partial class DairyCowItem : Item
     {

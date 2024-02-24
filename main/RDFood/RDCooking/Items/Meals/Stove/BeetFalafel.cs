@@ -14,8 +14,8 @@
     using Eco.Shared.Utils;
 
     [Serialized] 
-    [LocDisplayName("Beet Falafel")] 
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [LocDisplayName("Beet Falafel")]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("A collection of colors that realy shout 'I have all the carbs and fat your desire'!")] 
     public partial class BeetFalafelItem : FoodItem
     {

@@ -15,8 +15,8 @@
 
     [Serialized] 
     [LocDisplayName("BBQ Chicken Wing")] 
-    [Weight(1)] 
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [Weight(1)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("Some Good Ole Tasty Chicken Wings")] 
     public partial class BBQChickenWingItem : FoodItem
     {

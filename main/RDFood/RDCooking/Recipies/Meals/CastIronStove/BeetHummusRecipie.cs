@@ -15,7 +15,7 @@
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.CastIronStove;
 
     [RequiresSkill(typeof(CookingSkill), 3)]
-    [Ecopedia("Food", "Cooking", subPageName: "Beet Hummus Item")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Beet Hummus Item")]
     public partial class BeetHummusRecipe : RecipeFamily
     {
         public BeetHummusRecipe()
@@ -26,12 +26,12 @@
                 displayName: Localizer.DoStr("Beet Hummus"),
                 ingredients: new List<IngredientElement>
                 {
-                   new IngredientElement(typeof(CharredBeetItem), 20, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(CharredBeetItem), 5, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
                    new IngredientElement(typeof(OilItem), 1, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<BeetHummusItem>(3)
+                    new CraftingElement<BeetHummusItem>(1)
                 });
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 2f;

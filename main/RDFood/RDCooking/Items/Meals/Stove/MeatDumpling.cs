@@ -15,8 +15,8 @@
 
     [Serialized]
     [LocDisplayName("Meat & Dumplings")] 
-    [Weight(1)] 
-    [Ecopedia("Food", "Cooking", createAsSubPage: true)]
+    [Weight(1)]
+    [Ecopedia("Food", "RDFoods", createAsSubPage: true)]
     [LocDescription("It's in the name. Just don't ask about what kind of meat it is!")] 
     public partial class MeatDumplingsItem : FoodItem
     {

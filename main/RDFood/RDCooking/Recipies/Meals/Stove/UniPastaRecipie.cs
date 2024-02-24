@@ -15,7 +15,7 @@
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.Stove;
 
     [RequiresSkill(typeof(AdvancedCookingSkill), 4)]
-    [Ecopedia("SeaUrchinPasta", "Cooking", subPageName: "Sea Urchin Pasta Item")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Sea Urchin Pasta Item")]
     public partial class SeaUrchinPastaRecipe : RecipeFamily
     {
         public SeaUrchinPastaRecipe()

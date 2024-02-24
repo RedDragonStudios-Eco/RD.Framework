@@ -16,7 +16,7 @@ using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
  {
 
  [RequiresSkill(typeof(CampfireCookingSkill), 6)]
-    [Ecopedia("Food", "Cooking", subPageName: "Forest Chicken Gyro")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Forest Chicken Gyro")]
     public partial class ForestChickenGyroRecipe : RecipeFamily
     {
         public ForestChickenGyroRecipe()

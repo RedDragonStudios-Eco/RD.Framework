@@ -18,7 +18,7 @@ namespace RD.Framework.main.RDRanching.Recipies.Slaughtery
     using RD.Framework.main.RDSkills.Ranching;
 
     [RequiresSkill(typeof(RancherSkill), 5)]
-    [Ecopedia("Items", "Products", subPageName: "Slaughter Goat")]
+    [Ecopedia("Natural Resources", "Animal", subPageName: "Goat Carcass")]
     public partial class SlaughterGoatRecipe : RecipeFamily
     {
         public SlaughterGoatRecipe()

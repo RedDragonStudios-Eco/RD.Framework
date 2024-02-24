@@ -15,7 +15,7 @@
     [LocDisplayName("Baby Prairie Dog")] 
     [Weight(250)] 
     [Ecopedia("Natural Resources", "Animal", createAsSubPage: true)]
-    [Tag("Baby Animals")]
+    [Tag("BabyAnimals")]
     [LocDescription("A Baby Prairie Dog.")]
     public partial class BabyPrairieDogItem : Item
     {

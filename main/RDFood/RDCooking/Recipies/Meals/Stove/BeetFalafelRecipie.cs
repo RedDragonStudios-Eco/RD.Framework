@@ -16,7 +16,7 @@
     using RD.Framework.main.RDFood.RDCooking.Items.Meals.Stove;
 
     [RequiresSkill(typeof(AdvancedCookingSkill), 3)]
-    [Ecopedia("Food", "AdvancedCooking", subPageName: "Beet Falafel Item")]
+    [Ecopedia("Food", "RDFoods", subPageName: "Beet Falafel")]
     public partial class BeetFalafelRecipe : RecipeFamily
     {
         public BeetFalafelRecipe()

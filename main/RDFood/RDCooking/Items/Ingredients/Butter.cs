@@ -15,6 +15,7 @@
     [LocDisplayName("Butter")]
     [Weight(100)]
     [Tag("Fat")]
+    [Tag("Butter")]
     [Ecopedia("Food", "Ingredients", createAsSubPage: true)]
     [LocDescription("Made from the milk of a cow.")]
     public partial class ButterItem : FoodItem

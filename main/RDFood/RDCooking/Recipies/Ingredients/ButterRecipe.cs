@@ -48,6 +48,4 @@
             partial void ModsPreInitialize();
             partial void ModsPostInitialize();
         }
-    }
-
-}
+ }

@@ -1,5 +1,5 @@
- namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Campfire
- {
+namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Campfire
+{
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -12,7 +12,7 @@
     using Eco.Gameplay.Skills;
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
-    using RD.Framework.main.RDCooking.Items.Meals.Campfire;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.Campfire;
 
     [RequiresSkill(typeof(CampfireCookingSkill), 3)]
     [Ecopedia("Food", "RDFoods", subPageName: "Campfire Hash")]

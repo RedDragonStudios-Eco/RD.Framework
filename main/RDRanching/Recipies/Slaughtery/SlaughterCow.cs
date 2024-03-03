@@ -14,10 +14,10 @@ namespace RD.Framework.main.RDRanching.Recipies.Slaughtery
     using Eco.Shared.Localization;
     using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
     using RD.Framework.main.RDRanching.Items.Animals.Carcass;
-    using RD.Framework.main.RDRanching.Items.obj;
     using RD.Framework.main.RDSkills.Ranching;
     using Eco.Shared.Properties;
     using Eco.Simulation.Agents;
+    using RD.Framework.main.RDRanching.Items.Objects;
 
     [RequiresSkill(typeof(RancherSkill), 5)]
     [Ecopedia("Natural Resources", "Animal", subPageName: "Angus Cow Carcass")]

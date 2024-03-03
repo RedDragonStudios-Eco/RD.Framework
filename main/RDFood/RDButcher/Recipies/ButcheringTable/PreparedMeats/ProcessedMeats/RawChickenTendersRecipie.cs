@@ -13,8 +13,10 @@
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
     using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
+    using Eco.Core.Items;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
+    [Ecopedia("Food", "Raw Meat", subPageName: "RawChickenTenders")]
     public partial class RawChickenTenderRecipe : RecipeFamily
     {
         public RawChickenTenderRecipe()
@@ -29,7 +31,7 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawChickenTenderItem>(3)
+                    new CraftingElement<RawChickenTenderItem>(2)
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;

@@ -13,8 +13,10 @@
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
     using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
+    using Eco.Core.Items;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
+    [Ecopedia("Food", "Raw Meat", subPageName: "RawChickenNuggets")]
     public partial class RawChickenNuggetRecipe : RecipeFamily
     {
         public RawChickenNuggetRecipe()

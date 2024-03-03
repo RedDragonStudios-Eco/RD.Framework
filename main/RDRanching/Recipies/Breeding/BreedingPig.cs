@@ -14,7 +14,7 @@
     using RD.Framework.main.RDRanching.Items;
     using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
     using RD.Framework.main.RDSkills.Ranching;
-    using RD.Framework.main.RDRanching.Items.obj;
+    using RD.Framework.main.RDRanching.Items.Objects;
 
     [RequiresSkill(typeof(RancherSkill), 1)]
     [Ecopedia("Items", "Products", subPageName: "Pig")]

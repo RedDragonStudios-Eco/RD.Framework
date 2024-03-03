@@ -9,7 +9,7 @@
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using Eco.Shared.Serialization;
-    using RD.Framework.main.RDRanching.Items.obj;
+    using RD.Framework.main.RDRanching.Items.Objects;
 
     [RequiresSkill(typeof(RancherSkill), 7)]
     [Ecopedia("Upgrade Modules", "Specialty Upgrades", subPageName: "Ranching Upgrade Item")]

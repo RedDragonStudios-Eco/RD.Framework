@@ -12,10 +12,10 @@
     using Eco.Gameplay.Skills;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
-    using RD.Framework.main.RDRanching.Items.obj;
     using RD.Framework.main.RDRanching.Items;
     using RD.Framework.main.RDSkills.Ranching;
     using RD.Framework.main.RDFood.RDRanching.Ingredients;
+    using RD.Framework.main.RDRanching.Items.Objects;
 
     [RequiresSkill(typeof(RancherSkill), 4)]
     [Ecopedia("Food", "Ingredients", subPageName:"Goat's Milk")]

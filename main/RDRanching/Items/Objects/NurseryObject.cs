@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDRanching.Items.obj
+﻿namespace RD.Framework.main.RDRanching.Items.Objects
 {
     using System;
     using System.Collections.Generic;
@@ -48,16 +48,16 @@
         public virtual Type RepresentedItemType => typeof(NurseryItem);
         public override LocString DisplayName => Localizer.DoStr("Nursery");
         public override TableTextureMode TableTexture => TableTextureMode.Wood;
-        private static string[] fuelTagList = new[] { "Bale" }; 
+        private static string[] fuelTagList = new[] { "Bale" };
 
         protected override void Initialize()
         {
-            this.ModsPreInitialize();
-            this.GetComponent<MinimapComponent>().SetCategory(Localizer.DoStr("Crafting"));
-            this.GetComponent<FuelSupplyComponent>().Initialize(2, fuelTagList);
-            this.GetComponent<FuelConsumptionComponent>().Initialize(10);
-            this.GetComponent<HousingComponent>().HomeValue = NurseryItem.homeValue;
-            this.ModsPostInitialize();
+            ModsPreInitialize();
+            GetComponent<MinimapComponent>().SetCategory(Localizer.DoStr("Crafting"));
+            GetComponent<FuelSupplyComponent>().Initialize(2, fuelTagList);
+            GetComponent<FuelConsumptionComponent>().Initialize(10);
+            GetComponent<HousingComponent>().HomeValue = NurseryItem.homeValue;
+            ModsPostInitialize();
         }
         partial void ModsPreInitialize();
         partial void ModsPostInitialize();
@@ -72,7 +72,7 @@
     [AllowPluginModules(Tags = new[] { "BasicUpgrade" }, ItemTypes = new[] { typeof(FarmingUpgradeItem) })]
     public partial class NurseryItem : WorldObjectItem<NurseryObject>, IPersistentData
     {
-        protected override OccupancyContext GetOccupancyContext => new SideAttachedContext(0 | DirectionAxisFlags.Down, WorldObject.GetOccupancyInfo(this.WorldObjectType));
+        protected override OccupancyContext GetOccupancyContext => new SideAttachedContext(0 | DirectionAxisFlags.Down, WorldObject.GetOccupancyInfo(WorldObjectType));
         public override HomeFurnishingValue HomeValue => homeValue;
         public static readonly HomeFurnishingValue homeValue = new HomeFurnishingValue()
         {
@@ -94,25 +94,25 @@
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "Nursery",  
+                name: "Nursery",
                 displayName: Localizer.DoStr("Nursery"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement("Wood", 5, typeof(CarpentrySkill), typeof(CarpentryLavishResourcesTalent)), 
-                    new IngredientElement("Rock", 30, typeof(CarpentrySkill), typeof(CarpentryLavishResourcesTalent)), 
-                    new IngredientElement("WoodBoard", 10, typeof(CarpentrySkill), typeof(CarpentryLavishResourcesTalent)), 
+                    new IngredientElement("Wood", 5, typeof(CarpentrySkill), typeof(CarpentryLavishResourcesTalent)),
+                    new IngredientElement("Rock", 30, typeof(CarpentrySkill), typeof(CarpentryLavishResourcesTalent)),
+                    new IngredientElement("WoodBoard", 10, typeof(CarpentrySkill), typeof(CarpentryLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
                     new CraftingElement<NurseryItem>()
                 });
-            this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 5; 
-            this.LaborInCalories = CreateLaborInCaloriesValue(300, typeof(CarpentrySkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(NurseryRecipe), start: 5, skillType: typeof(CarpentrySkill), typeof(CarpentryFocusedSpeedTalent), typeof(CarpentryParallelSpeedTalent));
-            this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Nursery"), recipeType: typeof(NurseryRecipe));
-            this.ModsPostInitialize();
+            Recipes = new List<Recipe> { recipe };
+            ExperienceOnCraft = 5;
+            LaborInCalories = CreateLaborInCaloriesValue(300, typeof(CarpentrySkill));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(NurseryRecipe), start: 5, skillType: typeof(CarpentrySkill), typeof(CarpentryFocusedSpeedTalent), typeof(CarpentryParallelSpeedTalent));
+            ModsPreInitialize();
+            Initialize(displayText: Localizer.DoStr("Nursery"), recipeType: typeof(NurseryRecipe));
+            ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(SawmillObject), recipe: this);
         }
 

@@ -15,7 +15,7 @@
     using RD.Framework.main.RDRanching.Items;
     using RD.Framework.main.RDRanching.Items.Animals.AdultAnimals;
     using RD.Framework.main.RDRanching.Items.Animals.BabyAnimals;
-    using RD.Framework.main.RDRanching.Items.obj;
+    using RD.Framework.main.RDRanching.Items.Objects;
 
     [RequiresSkill(typeof(HuntingSkill), 3)]
     [Ecopedia("Items", "Animal", subPageName: "Rabbit")]

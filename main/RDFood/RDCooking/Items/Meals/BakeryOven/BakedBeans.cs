@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.Bakery_Oven
+﻿namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
 {
     using System;
     using System.Collections.Generic;

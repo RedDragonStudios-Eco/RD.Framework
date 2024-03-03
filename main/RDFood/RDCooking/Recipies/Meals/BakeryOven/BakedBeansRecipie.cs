@@ -1,5 +1,5 @@
 ﻿
-namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
+namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.BakeryOven
 {
     using System;
     using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
     using Eco.Gameplay.Skills;
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
-    using RD.Framework.main.RDFood.RDCooking.Items.Meals.Bakery_Oven;
+    using RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven;
 
     [RequiresSkill(typeof(BakingSkill), 2)]
     [Ecopedia("Food", "RDFoods", subPageName: "Baked Beans Item")]
@@ -35,13 +35,13 @@ namespace RD.Framework.main.RDFood.RDCooking.Items.Meals.BakeryOven
                 {
                     new CraftingElement<BakedBeansItem>(1)
                 });
-            this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 3;
-            this.LaborInCalories = CreateLaborInCaloriesValue(45, typeof(BakingSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BakedBeansRecipe), start: 2.0f, skillType: typeof(BakingSkill), typeof(BakingFocusedSpeedTalent), typeof(BakingParallelSpeedTalent));
-            this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("Baked Beans"), recipeType: typeof(BakedBeansRecipe));
-            this.ModsPostInitialize();
+            Recipes = new List<Recipe> { recipe };
+            ExperienceOnCraft = 3;
+            LaborInCalories = CreateLaborInCaloriesValue(45, typeof(BakingSkill));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BakedBeansRecipe), start: 2.0f, skillType: typeof(BakingSkill), typeof(BakingFocusedSpeedTalent), typeof(BakingParallelSpeedTalent));
+            ModsPreInitialize();
+            Initialize(displayText: Localizer.DoStr("Baked Beans"), recipeType: typeof(BakedBeansRecipe));
+            ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(BakeryOvenObject), recipe: this);
         }
         partial void ModsPreInitialize();

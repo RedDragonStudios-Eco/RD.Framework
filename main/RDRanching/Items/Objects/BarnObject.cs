@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDRanching.Items.obj
+﻿namespace RD.Framework.main.RDRanching.Items.Objects
 {
     using System;
     using System.Collections.Generic;

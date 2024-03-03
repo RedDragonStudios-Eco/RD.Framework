@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
+﻿/**namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
 {
     using System;
     using System.Collections.Generic;
@@ -13,18 +13,16 @@
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
     using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
-    using Eco.Core.Items;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
-    [Ecopedia("Food", "Raw Meat", subPageName: "RawChickenTenders")]
     public partial class RawChickenTenderRecipe : RecipeFamily
     {
         public RawChickenTenderRecipe()
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "PrepareRawChickenTender",
-                displayName: Localizer.DoStr("Prepare Raw Chicken Tender"),
+                name: "PrepareRawChickenTenders",
+                displayName: Localizer.DoStr("Prepare Raw Chicken Tenders"),
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(RawChickenBreastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent))
@@ -38,11 +36,11 @@
             LaborInCalories = CreateLaborInCaloriesValue(15, typeof(ButcherySkill));
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawChickenTenderRecipe), start: 0.5f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Raw Chicken Tender"), recipeType: typeof(RawChickenTenderRecipe));
+            Initialize(displayText: Localizer.DoStr("Raw Chicken Tenders"), recipeType: typeof(RawChickenTenderRecipe));
             ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
         }
         partial void ModsPreInitialize();
         partial void ModsPostInitialize();
     }
-}
+}*/

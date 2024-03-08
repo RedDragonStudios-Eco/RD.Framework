@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDCooking.Recipies.Ingredients
+﻿/**namespace RD.Framework.main.RDFood.RDCooking.Recipies.Ingredients
 {
         using System;
         using System.Collections.Generic;
@@ -33,7 +33,7 @@
                     },
                     items: new List<CraftingElement>
                     {
-                    new CraftingElement<ButterItem>(4),
+                    new CraftingElement<ButterStickItem>(4),
                     new CraftingElement<BucketItem>(1),
                     });
                 this.Recipes = new List<Recipe> { recipe };
@@ -48,4 +48,4 @@
             partial void ModsPreInitialize();
             partial void ModsPostInitialize();
         }
- }
+ }*/

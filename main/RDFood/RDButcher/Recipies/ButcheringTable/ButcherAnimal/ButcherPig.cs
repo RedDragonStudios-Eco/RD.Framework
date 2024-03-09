@@ -29,11 +29,11 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawPorkChopItem>(5),
-                    new CraftingElement<RawPorkRoastItem>(6),
+                    new CraftingElement<RawPorkChopItem>(4),
+                    new CraftingElement<RawPorkRoastItem>(3),
                     new CraftingElement<RawBaconItem>(5),
                     new CraftingElement<RawPorkButtItem>(2),
-                    new CraftingElement<TallowItem>(4),
+                    new CraftingElement<TallowItem>(1),
                     new CraftingElement<LeatherHideItem>(1),
                 });
             Recipes = new List<Recipe> { recipe };

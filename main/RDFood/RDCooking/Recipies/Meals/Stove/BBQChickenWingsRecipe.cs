@@ -30,7 +30,8 @@
                 {
                     new IngredientElement(typeof(RawChickenWingItem), 3, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
                    new IngredientElement(typeof(EggItem), 2, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
-                   new IngredientElement(("Oil"), 1, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(TomatoItem), 2, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement("Oil", 1, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {

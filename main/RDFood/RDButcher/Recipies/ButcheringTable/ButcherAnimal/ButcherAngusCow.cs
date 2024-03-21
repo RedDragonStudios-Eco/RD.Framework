@@ -12,7 +12,6 @@
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDRanching.Items.Animals.Carcass;
-    using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
     using Eco.Core.Items;
     using RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove;
@@ -34,8 +33,6 @@
                 items: new List<CraftingElement>
                 {
                     new CraftingElement<RawAngusRoastItem>(2),
-                    new CraftingElement<TallowItem>(1),
-                    new CraftingElement<LeatherHideItem>(1),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;

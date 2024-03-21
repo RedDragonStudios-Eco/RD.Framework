@@ -23,7 +23,7 @@
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(CowItem), 2, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 6, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 5, true),
                 },
                 items: new List<CraftingElement>
                 {
@@ -32,7 +32,7 @@
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 5f;
 
-            LaborInCalories = CreateLaborInCaloriesValue(70, typeof(RancherSkill));
+            LaborInCalories = CreateLaborInCaloriesValue(100, typeof(RancherSkill));
 
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(DairyCowRecipe), start: 5.0f, skillType: typeof(RancherSkill));
 

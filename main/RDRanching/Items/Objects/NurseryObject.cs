@@ -27,7 +27,7 @@
     using Eco.Shared.Math;
     using Eco.Shared.Serialization;
     using Eco.Shared.Utils;
-
+    using RD.Framework.main.RDSkills.Ranching;
 
     [Serialized]
     [RequireComponent(typeof(OnOffComponent))]
@@ -69,7 +69,7 @@
     [IconGroup("World Object Minimap")]
     [Ecopedia("Work Stations", "Craft Tables", createAsSubPage: true)]
     [Weight(15000)]
-    [AllowPluginModules(Tags = new[] { "BasicUpgrade" }, ItemTypes = new[] { typeof(FarmingUpgradeItem) })]
+    [AllowPluginModules(Tags = new[] { "BasicUpgrade" }, ItemTypes = new[] { typeof(RanchingUpgradeItem) })]
     public partial class NurseryItem : WorldObjectItem<NurseryObject>, IPersistentData
     {
         protected override OccupancyContext GetOccupancyContext => new SideAttachedContext(0 | DirectionAxisFlags.Down, WorldObject.GetOccupancyInfo(WorldObjectType));

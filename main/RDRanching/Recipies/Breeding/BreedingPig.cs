@@ -29,7 +29,7 @@
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(PigItem), 2, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 2, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 10, true),
                 },
                 items: new List<CraftingElement>
                 {
@@ -38,7 +38,7 @@
 
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 5f;
-            this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(RancherSkill));
+            this.LaborInCalories = CreateLaborInCaloriesValue(100, typeof(RancherSkill));
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BreedPigRecipe), start: 0.5f, skillType: typeof(RancherSkill));
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Breed Pig"), recipeType: typeof(BreedPigRecipe));

@@ -29,7 +29,7 @@
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(ChickenItem), 2, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 2, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 5, true),
                 },
                 items: new List<CraftingElement>
                 {

@@ -30,7 +30,7 @@
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(BabyHareItem), 1, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 3, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 5, true),
                 },
                 items: new List<CraftingElement>
                 {
@@ -38,7 +38,7 @@
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 5;
-            LaborInCalories = CreateLaborInCaloriesValue(70, typeof(HuntingSkill));
+            LaborInCalories = CreateLaborInCaloriesValue(50, typeof(HuntingSkill));
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(DomesticateHareRecipe), start: 5, skillType: typeof(HuntingSkill));
             ModsPreInitialize();
             Initialize(displayText: Localizer.DoStr("domesticate Hare"), recipeType: typeof(DomesticateHareRecipe));

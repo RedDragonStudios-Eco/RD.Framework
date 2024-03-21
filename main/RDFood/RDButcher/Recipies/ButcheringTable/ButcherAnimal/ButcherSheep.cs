@@ -31,7 +31,7 @@
                 {
                     new CraftingElement<RawMuttonItem>(6),
                     new CraftingElement<TallowItem>(2),
-                    new CraftingElement<ShornWoolItem>(2),
+                    new CraftingElement<ShornWoolItem>(4),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;

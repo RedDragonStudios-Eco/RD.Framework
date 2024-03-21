@@ -30,7 +30,7 @@
                 items: new List<CraftingElement>
                 {
                     new CraftingElement<RawRabbitMeatItem>(4),
-                    new CraftingElement<FurPeltItem>(2),
+                    new CraftingElement<FurPeltItem>(3),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;

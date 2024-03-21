@@ -29,7 +29,7 @@
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(GoatItem), 2, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 2, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 5, true),
                 },
                 items: new List<CraftingElement>
                 {
@@ -38,7 +38,7 @@
 
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 5;
-            this.LaborInCalories = CreateLaborInCaloriesValue(50, typeof(RancherSkill));
+            this.LaborInCalories = CreateLaborInCaloriesValue(100, typeof(RancherSkill));
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BreedGoatRecipe), start: 0.5f, skillType: typeof(RancherSkill));
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Breed Goat"), recipeType: typeof(BreedGoatRecipe));

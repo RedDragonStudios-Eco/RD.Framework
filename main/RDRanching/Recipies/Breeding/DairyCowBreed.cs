@@ -22,8 +22,8 @@
                 displayName: Localizer.DoStr("Breed Dairy Cow"),
                 ingredients: new List<IngredientElement>
                 {
-                    new IngredientElement(typeof(CowItem), 2, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 6, true),
+                    new IngredientElement(typeof(CowItem), 1, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 20, true),
                 },
                 items: new List<CraftingElement>
                 { 

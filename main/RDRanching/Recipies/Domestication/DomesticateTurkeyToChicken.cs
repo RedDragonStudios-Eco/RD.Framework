@@ -32,7 +32,7 @@ namespace RD.Framework.main.RDRanching.Recipies.Domestication
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(BabyTurkeyItem), 1, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 2, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 5, true),
                 },
                 items: new List<CraftingElement>
                 {

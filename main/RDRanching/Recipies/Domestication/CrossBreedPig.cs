@@ -31,7 +31,7 @@
                 {
                     new IngredientElement(typeof(BabyAgoutiItem), 1, true),
                     new IngredientElement(typeof(BabyPrairieDogItem), 1, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 3, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 5, true),
                 },
                 items: new List<CraftingElement>
                 {
@@ -39,7 +39,7 @@
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 5;
-            LaborInCalories = CreateLaborInCaloriesValue(70, typeof(HuntingSkill));
+            LaborInCalories = CreateLaborInCaloriesValue(120, typeof(HuntingSkill));
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(CrossBreedingPigRecipe), start: 5, skillType: typeof(HuntingSkill));
             ModsPreInitialize();
             Initialize(displayText: Localizer.DoStr("CrossBreed Pig"), recipeType: typeof(CrossBreedingPigRecipe));

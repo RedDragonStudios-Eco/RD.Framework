@@ -6,22 +6,18 @@
     using Eco.Shared.Localization;
     using Eco.Shared.Serialization;
     using Eco.Shared.Utils;
-    using Eco.Shared.Serialization;
 
     [Serialized]
-    [LocDisplayName("Butter")]
+    [LocDisplayName("FetaCheese")]
     [Weight(100)]
-    [Tag("Fat")]
     [Ecopedia("Food", "Ingredients", createAsSubPage: true)]
-    [LocDescription("Made from the milk of a cow.")]
-    public partial class ButterStickItem : FoodItem
+    [LocDescription("Made from the milk of a goat.")]
+    public partial class FetaCheeseItem : FoodItem
     {
-        public override LocString DisplayNamePlural => Localizer.DoStr("Butter");
+        public override LocString DisplayNamePlural => Localizer.DoStr("FetaCheese");
 
         public override float Calories => 200;
-        public override Nutrients Nutrition => new Nutrients() { Carbs = 0, Fat = 8, Protein = 0, Vitamins = 0 };
+        public override Nutrients Nutrition => new Nutrients() { Carbs = 0, Fat = 6, Protein = 3, Vitamins = 0 };
         protected override float BaseShelfLife => (float)TimeUtil.HoursToSeconds(96);
     }
-
 }
- 

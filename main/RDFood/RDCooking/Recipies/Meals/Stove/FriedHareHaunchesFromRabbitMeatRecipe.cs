@@ -11,7 +11,6 @@
     using Eco.Gameplay.Skills;
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
-    using Eco.Core.Items;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
     using RD.Framework.main.RDFood.RDRanching.Ingredients;
 

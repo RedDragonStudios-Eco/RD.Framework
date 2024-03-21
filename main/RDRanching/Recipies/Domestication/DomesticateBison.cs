@@ -22,7 +22,7 @@
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(BabyBisonItem), 1, true),
-                    new IngredientElement(typeof(AnimalFeedItem), 2, true),
+                    new IngredientElement(typeof(AnimalFeedItem), 5, true),
                 },
                 items: new List<CraftingElement>
                 {
@@ -30,7 +30,7 @@
                 });
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 10f; 
-            this.LaborInCalories = CreateLaborInCaloriesValue(70, typeof(HuntingSkill));
+            this.LaborInCalories = CreateLaborInCaloriesValue(120, typeof(HuntingSkill));
             this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(DomesticateBisonRecipe), start: 1.75f, skillType: typeof(HuntingSkill));
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Domesticate Bison"), recipeType: typeof(DomesticateBisonRecipe));

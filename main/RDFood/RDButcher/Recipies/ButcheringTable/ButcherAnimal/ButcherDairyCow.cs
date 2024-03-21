@@ -29,8 +29,8 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<ScrapMeatItem>(30),
-                    new CraftingElement<LeatherHideItem>(1),
+                    new CraftingElement<ScrapMeatItem>(20),
+                    new CraftingElement<LeatherHideItem>(3),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 3;

@@ -26,9 +26,9 @@
                 displayName: Localizer.DoStr("Beet Dip"),
                 ingredients: new List<IngredientElement>
                 {
-                   new IngredientElement(typeof(CharredBeetItem), 10, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(SunCheeseItem), 3, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
-                   new IngredientElement(typeof(FlatbreadItem), 1, typeof(CookingSkill), typeof(CookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(CharredBeetItem), 10, typeof(AdvancedCookingSkill), typeof(AdvancedCookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(SunCheeseItem), 3, typeof(AdvancedCookingSkill), typeof(AdvancedCookingLavishResourcesTalent)),
+                   new IngredientElement(typeof(FlatbreadItem), 1, typeof(AdvancedCookingSkill), typeof(AdvancedCookingLavishResourcesTalent)),
                 },
                 items: new List<CraftingElement>
                 {
@@ -36,8 +36,8 @@
                 });
             this.Recipes = new List<Recipe> { recipe };
             this.ExperienceOnCraft = 2;
-            this.LaborInCalories = CreateLaborInCaloriesValue(20, typeof(CookingSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BeetDipRecipe), start: 1.0f, skillType: typeof(CookingSkill), typeof(CookingFocusedSpeedTalent), typeof(CookingParallelSpeedTalent));
+            this.LaborInCalories = CreateLaborInCaloriesValue(20, typeof(AdvancedCookingSkill));
+            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BeetDipRecipe), start: 1.0f, skillType: typeof(AdvancedCookingSkill), typeof(AdvancedCookingFocusedSpeedTalent), typeof(AdvancedCookingParallelSpeedTalent));
             this.ModsPreInitialize();
             this.Initialize(displayText: Localizer.DoStr("Beet Dip"), recipeType: typeof(BeetDipRecipe));
             this.ModsPostInitialize();

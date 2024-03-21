@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.Stove
+﻿namespace RD.Framework.main.RDFood.RDCooking.Recipies.Meals.CastIronStove
 {
     using System;
     using System.Collections.Generic;
@@ -24,7 +24,7 @@
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "BBQChickenWing", 
+                name: "BBQChickenWing",
                 displayName: Localizer.DoStr("BBQ Chicken Wing"),
                 ingredients: new List<IngredientElement>
                 {
@@ -37,14 +37,14 @@
                 {
                     new CraftingElement<BBQChickenWingItem>(3)
                 });
-            this.Recipes = new List<Recipe> { recipe };
-            this.ExperienceOnCraft = 3;
-            this.LaborInCalories = CreateLaborInCaloriesValue(65, typeof(CookingSkill));
-            this.CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BBQChickenWingRecipe), start: 2.0f, skillType: typeof(CookingSkill), typeof(CookingFocusedSpeedTalent), typeof(CookingParallelSpeedTalent));
-            this.ModsPreInitialize();
-            this.Initialize(displayText: Localizer.DoStr("BBQ Chicken Wing"), recipeType: typeof(BBQChickenWingRecipe));
-            this.ModsPostInitialize();
-            CraftingComponent.AddRecipe(tableType: typeof(StoveObject), recipe: this);
+            Recipes = new List<Recipe> { recipe };
+            ExperienceOnCraft = 3;
+            LaborInCalories = CreateLaborInCaloriesValue(65, typeof(CookingSkill));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(BBQChickenWingRecipe), start: 2.0f, skillType: typeof(CookingSkill), typeof(CookingFocusedSpeedTalent), typeof(CookingParallelSpeedTalent));
+            ModsPreInitialize();
+            Initialize(displayText: Localizer.DoStr("BBQ Chicken Wing"), recipeType: typeof(BBQChickenWingRecipe));
+            ModsPostInitialize();
+            CraftingComponent.AddRecipe(tableType: typeof(CastIronStoveObject), recipe: this);
         }
         partial void ModsPreInitialize();
         partial void ModsPostInitialize();

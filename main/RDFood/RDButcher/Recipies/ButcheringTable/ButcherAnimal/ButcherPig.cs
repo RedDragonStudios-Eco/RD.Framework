@@ -29,12 +29,12 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawPorkChopItem>(4),
-                    new CraftingElement<RawPorkRoastItem>(3),
-                    new CraftingElement<RawBaconItem>(5),
+                    new CraftingElement<RawPorkChopItem>(2),
+                    new CraftingElement<RawPorkRoastItem>(2),
+                    new CraftingElement<RawBaconItem>(3),
                     new CraftingElement<RawPorkButtItem>(2),
                     new CraftingElement<TallowItem>(1),
-                    new CraftingElement<LeatherHideItem>(1),
+                    new CraftingElement<LeatherHideItem>(2),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;

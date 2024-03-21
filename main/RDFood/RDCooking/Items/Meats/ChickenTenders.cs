@@ -4,8 +4,10 @@
     using Eco.Gameplay.Items;
     using Eco.Gameplay.Players;
     using Eco.Shared.Localization;
+    using Eco.Shared.Serialization;
     using Eco.Shared.Utils;
 
+    [Serialized]
     [LocDisplayName("Chicken Tenders")]
     [Weight(100)]
     [Ecopedia("Food", "RDFoods", createAsSubPage: true)]

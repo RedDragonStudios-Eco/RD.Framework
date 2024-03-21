@@ -1,15 +1,10 @@
 ﻿namespace RD.Framework.main.RDFood.RDCooking.Items.Ingredients
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.ComponentModel;
     using Eco.Core.Items;
     using Eco.Gameplay.Items;
     using Eco.Gameplay.Players;
     using Eco.Shared.Localization;
+    using Eco.Shared.Serialization;
     using Eco.Shared.Utils;
     using Eco.Shared.Serialization;
 
@@ -19,7 +14,7 @@
     [Tag("Fat")]
     [Ecopedia("Food", "Ingredients", createAsSubPage: true)]
     [LocDescription("Made from the milk of a cow.")]
-    public partial class ButterItem : FoodItem
+    public partial class ButterStickItem : FoodItem
     {
         public override LocString DisplayNamePlural => Localizer.DoStr("Butter");
 
@@ -29,3 +24,4 @@
     }
 
 }
+ 

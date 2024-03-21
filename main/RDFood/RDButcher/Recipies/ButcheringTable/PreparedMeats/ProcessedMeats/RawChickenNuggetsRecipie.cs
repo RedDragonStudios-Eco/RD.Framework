@@ -1,11 +1,6 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
+namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.ComponentModel;
     using Eco.Gameplay.Components;
     using Eco.Gameplay.Items.Recipes;
     using Eco.Gameplay.Skills;
@@ -13,9 +8,11 @@
     using Eco.Shared.Localization;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
     using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
+    using Eco.Core.Items;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
     public partial class RawNuggetRecipe : RecipeFamily
+    [Ecopedia("Food", "Raw Meat", subPageName: "RawChickenNuggets")]
     {
         public RawNuggetRecipe()
         {
@@ -43,4 +40,4 @@
         partial void ModsPreInitialize();
         partial void ModsPostInitialize();
     }
-}
+}*/

@@ -14,7 +14,7 @@
     using Eco.Shared.Utils;
 
     [Serialized]
-    [LocDisplayName("Raw Chicken Nuggets")]
+    [LocDisplayName("RawChickenNuggets")]
     [Weight(20)]
     [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
     [LocDescription("Prepared Raw Chicken Nuggets. It should definitly be cooked before being consumed.")]

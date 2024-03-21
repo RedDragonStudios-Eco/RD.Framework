@@ -1,4 +1,4 @@
-﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
+namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
 {
     using System;
     using System.Collections.Generic;
@@ -29,7 +29,7 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawChickenTenderItem>(3)
+                    new CraftingElement<RawChickenTenderItem>(2)
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;
@@ -43,4 +43,4 @@
         partial void ModsPreInitialize();
         partial void ModsPostInitialize();
     }
-}
+}*/

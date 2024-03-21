@@ -14,7 +14,9 @@
     using Eco.Shared.Utils;
 
     [Serialized]
+
     [LocDisplayName("Raw Chicken Tender")]
+
     [Weight(125)]
     [Ecopedia("Food", "Raw Meat", createAsSubPage: true)]
     [LocDescription("Prepared Raw Chicken Tenders. It should definitly be cooked before being consumed.")]

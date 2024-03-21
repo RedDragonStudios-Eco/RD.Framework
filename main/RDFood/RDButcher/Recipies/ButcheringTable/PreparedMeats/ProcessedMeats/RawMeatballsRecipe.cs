@@ -5,6 +5,7 @@
     using Eco.Gameplay.Skills;
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
+    using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
     public partial class RawMeatballRecipe : RecipeFamily
@@ -21,7 +22,7 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawMeatItem>(10)
+                    new CraftingElement<RawMeatballItem>(10)
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;

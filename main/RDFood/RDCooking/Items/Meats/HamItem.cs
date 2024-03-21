@@ -20,8 +20,8 @@
     {
         public override LocString DisplayNamePlural => Localizer.DoStr("Ham");
 
-        public override float Calories => 1000;
-        public override Nutrients Nutrition => new Nutrients() { Carbs = 2, Fat = 6, Protein = 10, Vitamins = 4 };
+        public override float Calories => 1500;
+        public override Nutrients Nutrition => new Nutrients() { Carbs = 3, Fat = 7, Protein = 12, Vitamins = 5 };
         protected override float BaseShelfLife => (float)TimeUtil.HoursToSeconds(110);
     }
 }

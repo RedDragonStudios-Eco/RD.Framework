@@ -12,7 +12,6 @@
     using Eco.Mods.TechTree;
     using Eco.Shared.Localization;
     using RD.Framework.main.RDRanching.Items.Animals.Carcass;
-    using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
     using RD.Framework.main.RDFood.RDButcher.Items.RDRanching;
 
     [RequiresSkill(typeof(ButcherySkill), 4)]
@@ -30,12 +29,12 @@
                 },
                 items: new List<CraftingElement>
                 {
-                    new CraftingElement<RawAngusRoastItem>(4),
+                    new CraftingElement<RawAngusRoastItem>(2),
                     new CraftingElement<RawAngusSteakItem>(4),
                     new CraftingElement<RawBeefRibsItem>(2),
-                    new CraftingElement<ScrapMeatItem>(6),
-                    new CraftingElement<TallowItem>(4),
-                    new CraftingElement<LeatherHideItem>(1),
+                    new CraftingElement<ScrapMeatItem>(2),
+                    new CraftingElement<TallowItem>(1),
+                    new CraftingElement<LeatherHideItem>(2),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;

@@ -18,7 +18,7 @@
     using static Eco.Mods.TechTree.Agouti;
     using static Eco.Mods.TechTree.Hare;
     using static Eco.Mods.TechTree.PrairieDog;
-    public class FarmingBasePlugin : IModKitPlugin, IModInit
+    public class RanchingBasePlugin : IModKitPlugin, IModInit
     {
         public string GetStatus()
         {
@@ -57,10 +57,6 @@
             var prairieDogList = prairieDogSpecies.GetType().GetProperty("ResourceList", bindings).GetValue(prairieDogSpecies) as List<SpeciesResource>;
             prairieDogList.Add(new SpeciesResource(typeof(BabyPrairieDogItem), new Range(0, 3), 0.2f));
         }
-
-        public override string ToString() => "RD Ranching";
-
         public string GetCategory() => "Natural Resources";
-
     }
 }

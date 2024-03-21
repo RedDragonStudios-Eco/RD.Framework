@@ -11,7 +11,9 @@
     using Eco.Gameplay.Players;
     using Eco.Shared.Localization;
     using Eco.Shared.Utils;
+    using Eco.Shared.Serialization;
 
+    [Serialized]
     [LocDisplayName("Butter")]
     [Weight(100)]
     [Tag("Fat")]

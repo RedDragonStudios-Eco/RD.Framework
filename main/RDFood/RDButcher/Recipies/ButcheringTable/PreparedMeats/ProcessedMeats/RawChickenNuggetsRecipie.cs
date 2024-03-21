@@ -15,14 +15,14 @@
     using RD.Framework.main.RDFood.RDButcher.Items.RDFood;
 
     [RequiresSkill(typeof(ButcherySkill), 2)]
-    public partial class RawChickenNuggetRecipe : RecipeFamily
+    public partial class RawNuggetRecipe : RecipeFamily
     {
-        public RawChickenNuggetRecipe()
+        public RawNuggetRecipe()
         {
             var recipe = new Recipe();
             recipe.Init(
-                name: "PrepareRawChickenNugget",
-                displayName: Localizer.DoStr("Prepare Raw Chicken Nugget"),
+                name: "RawChickenNuggets",
+                displayName: Localizer.DoStr("Prepare Raw Chicken Nuggets"),
                 ingredients: new List<IngredientElement>
                 {
                     new IngredientElement(typeof(RawChickenBreastItem), 1, typeof(ButcherySkill), typeof(ButcheryLavishResourcesTalent))
@@ -34,9 +34,9 @@
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;
             LaborInCalories = CreateLaborInCaloriesValue(20, typeof(ButcherySkill));
-            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawChickenNuggetRecipe), start: 0.15f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
+            CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawNuggetRecipe), start: 0.15f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Raw Chicken Nugget"), recipeType: typeof(RawChickenNuggetRecipe));
+            Initialize(displayText: Localizer.DoStr("Raw Chicken Nuggets"), recipeType: typeof(RawNuggetRecipe));
             ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
         }

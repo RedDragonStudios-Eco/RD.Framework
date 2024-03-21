@@ -1,11 +1,11 @@
-﻿using Eco.Gameplay.Components;
-using Eco.Gameplay.Items.Recipes;
-using Eco.Gameplay.Skills;
-using Eco.Mods.TechTree;
-using Eco.Shared.Localization;
-
-namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
+﻿namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMeats.ProcessedMeats
 {
+    using Eco.Gameplay.Components;
+    using Eco.Gameplay.Items.Recipes;
+    using Eco.Gameplay.Skills;
+    using Eco.Mods.TechTree;
+    using Eco.Shared.Localization;
+
     [RequiresSkill(typeof(ButcherySkill), 2)]
     public partial class RawMeatballRecipe : RecipeFamily
     {
@@ -28,7 +28,7 @@ namespace RD.Framework.main.RDFood.RDButcher.Recipies.ButcheringTable.PreparedMe
             LaborInCalories = CreateLaborInCaloriesValue(20, typeof(ButcherySkill));
             CraftMinutes = CreateCraftTimeValue(beneficiary: typeof(RawMeatballRecipe), start: 0.25f, skillType: typeof(ButcherySkill), typeof(ButcheryFocusedSpeedTalent), typeof(ButcheryParallelSpeedTalent));
             ModsPreInitialize();
-            Initialize(displayText: Localizer.DoStr("Raw Chicken Nugget"), recipeType: typeof(RawMeatballRecipe));
+            Initialize(displayText: Localizer.DoStr("Raw Meatballs"), recipeType: typeof(RawMeatballRecipe));
             ModsPostInitialize();
             CraftingComponent.AddRecipe(tableType: typeof(ButcheryTableObject), recipe: this);
         }

@@ -32,7 +32,7 @@
                 {
                     new CraftingElement<RawChickenBreastItem>(2),
                     new CraftingElement<RawChickenWingItem>(2),
-                    new CraftingElement<FeathersItem>(2),
+                    new CraftingElement<FurPeltItem>(3),
                 });
             Recipes = new List<Recipe> { recipe };
             ExperienceOnCraft = 4;
